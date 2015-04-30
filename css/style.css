@@ -373,7 +373,14 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button { display:
 		.navbar-nav > li > .dropdown-menu a {
 		    color:     #fff;
 		    font-size: 0.8em;
+		    position: relative;
 		}
+			.navbar-nav > li > .dropdown-menu a span {
+				position: absolute;
+				right: 0;
+			    color:     #ff0000;
+
+			}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a { color: #ededed; }
 	.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
 	    background-color: rgba(87, 87, 86, 0.0);
@@ -1181,15 +1188,14 @@ footer {
 		position: relative;
 	}
 		.section-controls div:last-child { border-right: none; }
-	.section-controls i {
-		margin-bottom: 10px;
+	.section-controls i { margin-bottom: 10px; }
+	.section-controls button {
+		color: #a29d86;
+		border: none;
+		background: none;
 	}
-	.section-controls span {
-		position:              absolute;
-		top:                   5%;
-		right:                 35%;
-		color:                 green;
-	}
+	.section-controls button:hover, .section-controls button:focus { color: #7c775f; }
+		.btn-active i { color: #23ae23 !important; }
 
 .section-feature { 
 	padding:    6% 4% 15%;

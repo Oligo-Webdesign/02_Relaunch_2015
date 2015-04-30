@@ -14,6 +14,14 @@ $(document).ready(
 
 $("body").addClass("load");
 
+// Deatil Controls
+    $(".btn-remember").click(function(){
+        $(".btn-remember").toggleClass("btn-active");
+    });
+    $(".btn-cart").click(function(){
+        $(".btn-cart").toggleClass("btn-active");
+    });
+
 // Hiding Navigation
     $("div.navbar-fixed-top").autoHidingNavbar();
 
@@ -25,7 +33,7 @@ $("body").addClass("load");
         var scrolled = $(window).scrollTop();
             $('.hero').css('top',-(scrolled*0.0200)+'rem');
             $('.hero > div').css('top',-(scrolled*-0.005)+'rem');
-            $('.hero > div ').css('opacity',1-(scrolled*.00165));
+            $('.hero > div ').css('opacity',1-(scrolled*.001));
     };
 
 // Scroll to top
