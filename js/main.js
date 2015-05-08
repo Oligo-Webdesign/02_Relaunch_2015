@@ -25,16 +25,6 @@ $("body").addClass("load");
 // Hiding Navigation
     $("div.navbar-fixed-top").autoHidingNavbar();
 
-// Parallax Scrolling
-    $(window).scroll(function(e){
-    parallax();
-    });
-    function parallax(){
-        var scrolled = $(window).scrollTop();
-            $('.hero').css('top',-(scrolled*0.0200)+'rem');
-            $('.hero > div').css('top',-(scrolled*-0.005)+'rem');
-            $('.hero > div ').css('opacity',1-(scrolled*.0008));
-    };
 
 // Scroll to top
     $('.scrolltop').click(function(e)
@@ -66,9 +56,26 @@ new UISearch( document.getElementById( 'sb-search' ) );
 // Background-Video
 $(window).on('load resize', function() {
   if ($(window).width() > 1200) {
-     $( "#hero-video" ).load( "video.html video");
+       $( "#hero-video" ).load("video.html video");
+           $(window).scroll(function(e){
+      parallax();
+      });
+      function parallax(){
+          var scrolled = $(window).scrollTop();
+              $('.hero').css('top',-(scrolled*0.0200)+'rem');
+              $('.hero > div').css('top',-(scrolled*-0.005)+'rem');
+              $('.hero > div ').css('opacity',1-(scrolled*.0008));
+      };
   }
  else {
+    $( "#hero-video" ).css('background-image', "img/head-oligplus.jpg");
+      $(window).scroll(function(e){ parallax(); });
+        function parallax(){
+            var scrolled = $(window).scrollTop();
+                $('.hero').css('top',-(scrolled*0.0000)+'rem');
+                $('.hero > div').css('top',-(scrolled*-0.000)+'rem');
+                $('.hero > div ').css('opacity',1-(scrolled*.0008));
+        };
  }
 });
 

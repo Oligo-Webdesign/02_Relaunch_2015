@@ -80,9 +80,10 @@ body {
 h1, h2, h3, h4 {
 	text-transform: uppercase;
 	color: #918c73;
+	margin-bottom: 15px;
 }
 
-h2 { font-size: 1.6em; }
+h2 { font-size: 1.4em; }
 h3 { font-size: 1.2em; }
 h4 { font-size: 1.0em; }
 
@@ -275,11 +276,16 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button { display:
 		background: #fff;
 		color:      #a29d86;
 	}
-.btn-gold {
+.btn-full {
 	background: #a29d86;
 	color:      #ededed;
+	max-width: 400px;
+	margin: 0 auto;
+	display: block;
+	text-transform: uppercase;
+	font-size: 1em;
 }
-	.btn-gold:hover {
+	.btn-full:hover {
 		background: #96927B;
 		color:      #ededed;
 	}
@@ -468,9 +474,9 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button { display:
 	margin-bottom:      8px;
 	position:           relative;
 	z-index:            99999;
-	-webkit-box-shadow: -1px 0px 2px 0px rgba(87,87,86,0.7);
-	-moz-box-shadow:    -1px 0px 2px 0px rgba(87,87,86,0.7);
-	box-shadow:         -1px 0px 2px 0px rgba(87,87,86,0.7);
+	-webkit-box-shadow: inset 2px 3px 2px 0px rgba(87,87,86,0.7);
+	-moz-box-shadow:    inset 2px 3px 2px 0px rgba(87,87,86,0.7);
+	box-shadow:         inset 2px 3px 2px 0px rgba(87,87,86,0.7);
 }
 	.teaser img {
 		width:  100%;
@@ -498,6 +504,9 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button { display:
 	background-repeat:   no-repeat;
 }
 
+#lumination-overview .section-teaser div { 
+	margin-bottom:      25px;
+}
 #lumination-overview .teaser-lg { 
 	background:      url(../img/teaser-lg-systemleuchten.jpg) no-repeat;
 	background-size: cover;
@@ -1175,6 +1184,7 @@ footer {
 
 /*############################################### PAGE - DETAIL ####*/
 .section-detail { margin-bottom: 50px; }
+	.section-detail h4 { margin: 25px auto 8px; }
 	.section-detail .content-right { padding: 100px 0 0 50px; }
 	.section-detail section { margin-bottom: 25px; }
 		.section-detail section .btn { 
@@ -1190,7 +1200,10 @@ footer {
 		border-right: 1px solid rgba(87,87,86,.1);
 		position: relative;
 	}
-	.section-controls .row { max-width: 650px; }
+	.section-controls h4 { margin: 0 0 25px 35px; }
+	.section-controls .row { 
+		max-width: 650px;
+	}
 		.section-controls div:last-child { border-right: none; }
 	}
 	.section-controls i { margin-bottom: 0px; }
@@ -1198,6 +1211,7 @@ footer {
 		color: #575756;
 		border: none;
 		background: none;
+		line-height: 1.8em;
 	}
 		.btn-active i { color: #23ae23 !important; }
 
@@ -1233,30 +1247,6 @@ footer {
 	.feature-dark a { color:       #ededed; }
 		.feature-dark a:hover { color: #fff; }
 		.feature-dark p { color: #ededed; }
-.lightfamily li { 
-	float: left;
-	margin-left: 25px;
-}
-.lightfamily li:first-child {
-	margin-left: 0;
-	display:     block;
-}
-	.lightfamily a img { 
-		margin:  25px auto;
-		width:   30px;
-		height:  130px;
-		display: block;
-	}
-		.lightfamily a img:hover { 
-			background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,210,0.75) 16%, rgba(255,255,191,0.69) 23%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(16%,rgba(255,255,210,0.75)), color-stop(23%,rgba(255,255,191,0.69)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,210,0.75) 16%,rgba(255,255,191,0.69) 23%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,210,0.75) 16%,rgba(255,255,191,0.69) 23%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,210,0.75) 16%,rgba(255,255,191,0.69) 23%,rgba(255,255,255,0) 100%); /* IE10+ */
-			background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,210,0.75) 16%,rgba(255,255,191,0.69) 23%,rgba(255,255,255,0) 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-		}
-		.lightfamily a p { font-size: 0.8em; }
 
 .modal-content { padding: 25px; }
 .modal-dialog { z-index: 9999; }
@@ -1328,6 +1318,14 @@ footer {
 	   padding:   80px 60px 20px;
 	   font-size: 0.8em;
 	}
+	.hero {
+		position: relative;
+		display: block;
+	}
+	.content {
+		position: relative;
+		top: 0;
+	}
 }
 
 @media only screen and (max-width : 895px) {
@@ -1337,7 +1335,7 @@ footer {
 		.view a.info { bottom: 35%; }
 }
 
-@media only screen and (min-width : 768px) and (max-width : 1055px) { 
+@media only screen and (min-width : 768px) and (max-width : 1000px) { 
 	.navbar-right li {
 		position: absolute;
 	    top:         0;
