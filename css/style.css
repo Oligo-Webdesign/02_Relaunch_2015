@@ -1,4 +1,4 @@
- /* ############################################# CSS RESET #### */
+/* ############################################# CSS RESET #### */
 *{margin:0;padding:0;outline:0}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}html,body{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}input{border:1px solid #b0b0b0;padding:3px 5px 4px;color:#979797;width:190px}address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0}
 
 /*################################################## FONTS #####*/
@@ -76,6 +76,8 @@ body {
 }
 
 .row { margin: 0; }
+
+
 /* ############################################### ELEMENTS #### */
 h1, h2, h3, h4 {
 	text-transform: uppercase;
@@ -512,6 +514,11 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button { display:
 	background-size: cover;
 	margin-top:      25px;
 }
+#lumination-overview .system { 
+	background:      url(../img/teaser-lg-einzelleuchten.jpg) no-repeat;
+	background-size: cover;
+	margin-top:      25px;
+}
 #home .teaser-lg { 
 	background:      url(../img/teaser-shop.jpg) no-repeat;
 	background-size: 100% auto;
@@ -668,16 +675,20 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button { display:
   }
 
   .content {
-	position:   absolute;
+	position:   relative;
 	z-index:    1000;
 	top:        100vh;
 	-webkit-box-shadow: 0px 0px 40px 30px rgba(226, 226, 226, 0.3);
 	-moz-box-shadow:    0px 0px 40px 30px rgba(226, 226, 226, 0.3);
 	box-shadow:         0px 0px 40px 30px rgba(226, 226, 226, 0.3);
-	height:     100vh;
+	height:     auto;
+	min-height: 60%;
 	width:      100%;
-	z-index:    99;
+	z-index:    999;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
   	-webkit-overflow-scrolling: touch;
+  	display: block;
   }
 
   #no-hero .content { top: 70px; }
@@ -880,7 +891,7 @@ footer {
 	position:         relative;
 	font-size:        0.8em;
 	padding-top:      25px;
-	margin-top:       50px;
+	z-index: 1000
 }
 	footer h3 {
 		font-size: 1em;
@@ -1179,6 +1190,11 @@ footer {
 		  line-height:            25px;
 		}
 
+/*############################################### PAGE - HOME ####*/
+#home .section-news {
+	margin-bottom: 50px;
+}
+
 /*############################################### PAGE - STATIC ####*/
 #carousel-static { margin: 25px auto 35px; }
 
@@ -1248,7 +1264,7 @@ footer {
 		.feature-dark a:hover { color: #fff; }
 		.feature-dark p { color: #ededed; }
 
-.modal-content { padding: 25px; }
+.modal-content { padding: 25px; top: 35px; }
 .modal-dialog { z-index: 9999; }
 .modal-body { font-size: 0.8em; }
 	.modal-body > div > div { margin-bottom: 25px; }
@@ -1264,10 +1280,13 @@ footer {
 #modal-imagedownload p {
 	text-align: center;
 }
-
 /*############################################### PAGE - LOCATIONS ####*/
 .section-location h3, .section-location p, .section-location a { margin: 0 0 25px; }
-	.section-location p { text-align: justify; }
+.section-location p { text-align: justify; }
+.section-location a img { 
+	margin: 0 0px 25px 0px;
+	width: 100%;
+}
 
 /*############################################### PAGE - AWARDS ####*/
 .section-awards .row { margin: 0 0 100px 0; }
