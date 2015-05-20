@@ -141,25 +141,111 @@
 
 		<section class="content cd-main-content row">
 		
-			<div class="col-lg-2" id="filter-affix">
-
-				<a href="#0" class="cd-filter-trigger">Suche eingrenzen</a> 
-
+			<div class="col-lg-2" id="section-filter">
 				<div class="cd-tab-filter">
 					<ul class="cd-filters">
 						<li class="placeholder"> 
-							<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+							<a data-type="all" href="#0">Übersicht</a> <!-- selected option on mobile -->
 						</li> 
-						<li class="filter"><a class="selected" href="#0" data-type="all">Alle</a></li>
+						<li class="filter"><a class="selected" href="#0" data-type="all"><span>Übersicht</span></a></li>
 						<li class="filter" data-filter=".voltage-230"><a href="#0" data-type="voltage-230">230V</a></li>
 						<li class="filter" data-filter=".voltage-24"><a href="#0" data-type="voltage-24">24V</a></li>
 						<li class="filter" data-filter=".voltage-12"><a href="#0" data-type="voltage-12">12V</a></li>
 						<li class="filter" data-filter=".voltage-12-24-230"><a href="#0" data-type="voltage-12-24-230">230V / 24V / 12V</a></li>
+						<li>
+							<a href="#0" class="cd-filter-trigger"><i class="fa fa-search"></i> &nbsp;<span>Auswahlkriterien</span></a> 
+						</li>
 					</ul> <!-- cd-filters -->
 				</div> <!-- cd-tab-filter -->
+
+				<div class="col-xs-12 cd-filter">
+					<form>
+						<!--
+						<div class="cd-filter-block">
+							<h4>Suchen</h4>
+							
+							<div class="cd-filter-content">
+								<input type="search" placeholder="Textsuche">
+							</div>
+						</div> 
+						-->
+
+						<div class="cd-filter-block">
+							<h4>System</h4>
+
+							<ul class="cd-filter-content cd-filters list">
+								<li>
+									<input class="filter" data-filter=".trackSystem" type="checkbox" id="checkbox1">
+					    			<label class="checkbox-label" for="checkbox1">Schienensystem</label>
+								</li>
+
+								<li>
+									<input class="filter" data-filter=".plugSystem" type="checkbox" id="checkbox2">
+					    			<label class="checkbox-label" for="checkbox2">Steckkontaktsystem</label>
+								</li>
+
+								<li>
+									<input class="filter" data-filter=".recessedSystem" type="checkbox" id="checkbox3">
+									<label class="checkbox-label" for="checkbox3">Einbausystem</label>
+								</li>
+
+								<li>
+									<input class="filter" data-filter=".cableSystem" type="checkbox" id="checkbox4">
+									<label class="checkbox-label" for="checkbox4">Seilsystem</label>
+								</li>
+							</ul> <!-- cd-filter-content -->
+						</div> <!-- cd-filter-block -->
+						
+						<!--
+						<div class="cd-filter-block">
+							<h4>Select</h4>
+							
+							<div class="cd-filter-content">
+								<div class="cd-select cd-filters">
+									<select class="filter" name="selectThis" id="selectThis">
+										<option value="">Choose an option</option>
+										<option value=".option1">Option 1</option>
+										<option value=".option2">Option 2</option>
+										<option value=".option3">Option 3</option>
+										<option value=".option4">Option 4</option>
+									</select>
+								</div> 
+							</div> 
+						</div>
+						-->
+
+						<div class="cd-filter-block">
+							<h4>Netzwerk</h4>
+
+							<ul class="cd-filter-content cd-filters list">
+								<li>
+									<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+									<label class="radio-label" for="radio1">Alle</label>
+								</li>
+
+								<li>
+									<input class="filter" data-filter=".bus-dali" type="radio" name="radioButton" id="radio2">
+									<label class="radio-label" for="radio2">Dali</label>
+								</li>
+
+								<li>
+									<input class="filter" data-filter=".bus-funk" type="radio" name="radioButton" id="radio3">
+									<label class="radio-label" for="radio3">Funk</label>
+								</li>
+
+								<li>
+									<input class="filter" data-filter=".bus-no" type="radio" name="radioButton" id="radio3">
+									<label class="radio-label" for="radio3">nein</label>
+								</li>
+							</ul> <!-- cd-filter-content -->
+						</div> <!-- cd-filter-block -->
+
+						<a href="#0" class="cd-close"><i class="fa fa-times"></i>  &nbsp;schließen</a>
+					</form>
+				</div> <!-- cd-filter -->
 			</div>
 
-			<div class="col-md-10 col-md-offset-2 cd-gallery row">
+			<div class="col-lg-10 col-lg-offset-2 cd-gallery row">
 				<ul>
 					<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-230 trackSystem bus-dali option2">
 						<a href="#" class="teaser view ">
@@ -246,181 +332,96 @@
 				<div class="cd-fail-message">Keine Ergebnisse gefunden :(</div>
 			</div> <!-- cd-gallery -->
 
-			<div class="cd-filter">
-				<form>
-					<!--
-					<div class="cd-filter-block">
-						<h4>Suchen</h4>
-						
-						<div class="cd-filter-content">
-							<input type="search" placeholder="Textsuche">
-						</div>
-					</div> 
-					-->
-
-					<div class="cd-filter-block">
-						<h4>System</h4>
-
-						<ul class="cd-filter-content cd-filters list">
-							<li>
-								<input class="filter" data-filter=".trackSystem" type="checkbox" id="checkbox1">
-				    			<label class="checkbox-label" for="checkbox1">Schienensystem</label>
-							</li>
-
-							<li>
-								<input class="filter" data-filter=".plugSystem" type="checkbox" id="checkbox2">
-				    			<label class="checkbox-label" for="checkbox2">Steckkontaktsystem</label>
-							</li>
-
-							<li>
-								<input class="filter" data-filter=".recessedSystem" type="checkbox" id="checkbox3">
-								<label class="checkbox-label" for="checkbox3">Einbausystem</label>
-							</li>
-
-							<li>
-								<input class="filter" data-filter=".cableSystem" type="checkbox" id="checkbox4">
-								<label class="checkbox-label" for="checkbox4">Seilsystem</label>
-							</li>
-						</ul> <!-- cd-filter-content -->
-					</div> <!-- cd-filter-block -->
-					
-					<!--
-					<div class="cd-filter-block">
-						<h4>Select</h4>
-						
-						<div class="cd-filter-content">
-							<div class="cd-select cd-filters">
-								<select class="filter" name="selectThis" id="selectThis">
-									<option value="">Choose an option</option>
-									<option value=".option1">Option 1</option>
-									<option value=".option2">Option 2</option>
-									<option value=".option3">Option 3</option>
-									<option value=".option4">Option 4</option>
-								</select>
-							</div> 
-						</div> 
-					</div>
-					-->
-
-					<div class="cd-filter-block">
-						<h4>Netzwerk</h4>
-
-						<ul class="cd-filter-content cd-filters list">
-							<li>
-								<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-								<label class="radio-label" for="radio1">Alle</label>
-							</li>
-
-							<li>
-								<input class="filter" data-filter=".bus-dali" type="radio" name="radioButton" id="radio2">
-								<label class="radio-label" for="radio2">Dali</label>
-							</li>
-
-							<li>
-								<input class="filter" data-filter=".bus-funk" type="radio" name="radioButton" id="radio3">
-								<label class="radio-label" for="radio3">Funk</label>
-							</li>
-
-							<li>
-								<input class="filter" data-filter=".bus-no" type="radio" name="radioButton" id="radio3">
-								<label class="radio-label" for="radio3">nein</label>
-							</li>
-						</ul> <!-- cd-filter-content -->
-					</div> <!-- cd-filter-block -->
-				</form>
-
-				<a href="#0" class="cd-close">schließen</a>
-			</div> <!-- cd-filter -->
-
-				</div><!-- cd-main-content -->
 
 
 				<div class="row section-text">
 				</div>
 				
-				<footer>
-					<div class="row">
-							<a href="#" class="scrolltop">oben</a>
-						<div class="col-sm-10 col-sm-offset-1">
-							<div class="col-md-2 col-sm-4 col-xs-12">
-								<h3>Produkte</h3>
-								<ul class="hidden-xs">
-									<li><a href="#">Systemleuchten</a></li>
-									<li><a href="einzelleuchten.html">Einzelleuchten</a></li>
-									<li><a href="oligoplus.html">OLIGO<sup>plus</sup> Kollektion</a></li>
-								</ul>
-							</div>
-							<div class="col-md-2 col-sm-4 col-xs-12">
-								<h3>Media</h3>
-								<ul class="hidden-xs">
-									<li><a href="produktdaten.html">Produktdaten</a></li>
-									<li><a href="printmedien.html">Printmedien</a></li>
-									<li><a href="#">Video</a></li>
-									<li><a href="#">Presse</a></li>
-									<li><a href="awards.html">Awards</a></li>
-								</ul>
-							</div>
-							<div class="col-md-2 col-sm-4 col-xs-12">
-								<h3>Service</h3>
-								<ul class="hidden-xs">
-									<li><a href="#">Lichtplanung</a></li>
-									<li><a href="#">Systemtechnik</a></li>
-									<li><a href="#">Sonderlösungen</a></li>
-									<li><a href="#">Vertrieb</a></li>
-									<li><a href="#">FAQ</a></li>
-								</ul>
-							</div>
-							<div class="col-md-2 col-sm-4 col-xs-12">
-								<h3>Unternehmen</h3>
-								<ul class="hidden-xs">
-									<li><a href="selbstverstaendnis.html">Selbstverständnis</a></li>
-									<li><a href="geschaeftsbereiche.hmtl">Geschäftsbereiche</a></li>
-									<li><a href="#">Standorte</a></li>
-									<li><a href="karriere.html">Karriere</a></li>
-									<li><a href="#">News</a></li>
-								</ul>
-							</div>
-							<div class="col-md-2 col-sm-4 col-xs-12">
-								<h3>Bezugspunkte</h3>
-								<ul class="hidden-xs">
-									<li><a href="ansprechpartner.html">Händler</a></li>
-									<li><a href="#">Showroom</a></li>
-									<li><a href="#">Concept Gallery</a></li>
-								</ul>
-							</div>
-							<div class="col-md-2 col-sm-4 col-xs-12">
-								<h3><sup>my</sup>OLIGO</h3>
-								<ul class="hidden-xs">
-									<li><a href="#">Merkzettel</a></li>
-									<li><a href="#">Produktvergleich</a></li>
-									<li><a href="#">Warenkorb</a></li>
-								</ul>
-							</div>
+			
+			<footer>
+				<div class="row">
+						<a href="#" class="scrolltop">oben</a>
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="col-md-2 col-sm-4 col-xs-6">
+							<h3>Produkte</h3>
+							<ul>
+								<li><a href="#">Systemleuchten</a></li>
+								<li><a href="einzelleuchten.html">Einzelleuchten</a></li>
+								<li><a href="oligoplus.html">OLIGO<sup>plus</sup> Kollektion</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6">
+							<h3>Media</h3>
+							<ul>
+								<li><a href="produktdaten.html">Produktdaten</a></li>
+								<li><a href="printmedien.html">Printmedien</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Presse</a></li>
+								<li><a href="awards.html">Awards</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6">
+							<h3>Service</h3>
+							<ul>
+								<li><a href="#">Lichtplanung</a></li>
+								<li><a href="#">Systemtechnik</a></li>
+								<li><a href="#">Sonderlösungen</a></li>
+								<li><a href="#">Vertrieb</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6">
+							<h3>Unternehmen</h3>
+							<ul>
+								<li><a href="selbstverstaendnis.html">Selbstverständnis</a></li>
+								<li><a href="geschaeftsbereiche.hmtl">Geschäftsbereiche</a></li>
+								<li><a href="#">Standorte</a></li>
+								<li><a href="karriere.html">Karriere</a></li>
+								<li><a href="#">News</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6">
+							<h3>Bezugspunkte</h3>
+							<ul>
+								<li><a href="ansprechpartner.html">Händler</a></li>
+								<li><a href="#">Showroom</a></li>
+								<li><a href="#">Concept Gallery</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6">
+							<h3><sup>my</sup>OLIGO</h3>
+							<ul>
+								<li><a href="#">Merkzettel</a></li>
+								<li><a href="#">Produktvergleich</a></li>
+								<li><a href="#">Warenkorb</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-10 col-md-offset-1 col-xs-12">
-							<div class="col-md-3 col-xs-12 text-left footer-legal">
-								<p>&copy; OLIGO Lichttechnik GmbH</p>
-							</div>
-							<div class="col-md-3 col-xs-12 pull-left text-center footer-legal">
-								<a href="#">Impressum</a> | <a href="#">Haftungsausschluss</a> | <a href="#">AGB</a>
-							</div>
-								<div class="col-md-5 col-md-offset-1 col-xs-12 social">
-									<ul style="pull-right">
-										<li><a href="#" target="_blank" class="twitter" rel="nofollow">Twitter</a></li>
-										<li><a href="#" target="_blank" class="facebook" rel="nofollow">Facebook</a></li>
-										<li><a href="#" target="_blank" class="googleplus" rel="nofollow">Google+</a></li>
-										<li><a href="#" target="_blank" class="pinterest" rel="nofollow">Pinterest</a></li>
-										<li><a href="#" target="_blank" class="linkedin" rel="nofollow">LinkedIn</a></li>
-										<li><a href="#" target="_blank" class="flickr" rel="nofollow">Flickr</a></li>
-										<li><a href="#" target="_blank" class="youtube" rel="nofollow">YouTube</a></li>
-										<li><a href="#" target="_blank" class="checkpoint" rel="nofollow">Foursquare</a></li>
-									</ul>
-								</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 col-xs-12 footer-legal">
+						<div class="col-md-4 col-xs-12">
+							<p>&copy; OLIGO Lichttechnik GmbH</p>
+						</div>
+						<div class="col-md-4 col-xs-12">
+							<a href="#">Impressum</a> | <a href="#">Haftungsausschluss</a> | <a href="#">AGB</a>
+						</div>
+						<div class="col-md-3 col-xs-12 social">
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-xing"></i></a>
+							<a href="#"><i class="fa fa-pinterest-p"></i></a>
+						</div>
+						<div class="col-md-1 col-xs-12  audio-player">
+							<div class="speaker"></div>
+							<audio id="player">
+							    <source src="http://uplusion23.github.io/cdn/music/awolnation/sail.mp3" type="audio/mp3" />
+							</audio>
 						</div>
 					</div>
-				</footer>
+				</div>
+			</footer>
 		</section>
 
 		<script src="js/jquery-1.11.2.min.js"></script>
