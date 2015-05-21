@@ -209,6 +209,10 @@ $('#player').on('ended', function() {
           controls: {
             enable: false
           },
+          animation: {
+            duration: 700,
+            effects: 'fade stagger(250ms)'
+          },
           callbacks: {
             onMixStart: function(){
               $('.cd-fail-message').fadeOut(200);
