@@ -46,19 +46,19 @@
 	                <li><a href="produktdaten.html">Produktdaten</a></li>
 	                <li><a href="printmedien.html">Printmedien</a></li>
 	                <li><a href="#">Video</a></li>
-	                <li><a href="#">Presse</a></li>
+	                <li><a href="presse.html">Presse</a></li>
 	                <li><a href="awards.html">Awards</a></li>
 	              </ul>
 	          	</li>
 	            <li class="dropdown">
 	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service</a>
 	              <ul class="dropdown-menu">
-	                <li><a href="#">Lichtplanung</a></li>
+	                <li><a href="lichtplanung.html">Lichtplanung</a></li>
 	                <li><a href="#">Systemtechnik</a></li>
 	                <li><a href="#">Sonderlösungen</a></li>
-	                <li><a href="#">Vertrieb</a></li>
-	                <li><a href="#">Schulungen</a></li>
-	                <li><a href="#">FAQ</a></li>
+	                <li><a href="vertrieb.html">Vertrieb</a></li>
+	                <li><a href="schulungen.html">Schulungen</a></li>
+	                <li><a href="ratgeber.html">Ratgeber</a></li>
 	              </ul>
 	          	</li>
 	            <li class="dropdown">
@@ -77,14 +77,14 @@
 	                <li><a href="#">Händler</a></li>
 	                <li><a href="showrooms.html">Showrooms</a></li>
 	                <li><a href="concept-gallery.html">Concept Gallery</a></li>
-	                <li><a href="concept-gallery.html">Online Partner</a></li>
+	                <li><a href="#">Online Partner</a></li>
 	              </ul>
 	          	</li>
 	            <li class="dropdown">
 	              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><sup>my</sup>OLIGO</a>
 	              <ul class="dropdown-menu">
 	                <li><a href="merkzettel.html">Merkzettel <span>0</span></a></li>
-	                <li><a href="#">Produktvergleich</a></li>
+	                <li><a href="vergleich.html">Produktvergleich</a></li>
 	                <li><a href="#">Warenkorb <span>0</span></a></li>
 	              </ul>
 	          	</li>
@@ -140,204 +140,213 @@
 		</section>
 
 		<section class="content cd-main-content row">
-		
-			<div class="col-lg-2" id="section-filter">
-				<div class="cd-tab-filter">
-					<ul class="cd-filters">
-						<li class="placeholder"> 
-							<a data-type="all" href="#0">Übersicht</a> <!-- selected option on mobile -->
-						</li> 
-						<li class="filter"><a class="selected" href="#0" data-type="all"><span>Übersicht</span></a></li>
-						<li class="filter" data-filter=".voltage-230"><a href="#0" data-type="voltage-230">230 Volt</a></li>
-						<li class="filter" data-filter=".voltage-24"><a href="#0" data-type="voltage-24">24 Volt</a></li>
-						<li class="filter" data-filter=".voltage-12"><a href="#0" data-type="voltage-12">12 Volt</a></li>
-						<li class="filter" data-filter=".voltage-12-24-230"><a href="#0" data-type="voltage-12-24-230">230 / 24 / 12 Volt</a></li>
-						<li>
-							<a href="#0" class="cd-filter-trigger"><i class="fa fa-search"></i> &nbsp;<span>Auswahlkriterien</span></a> 
-						</li>
-					</ul> <!-- cd-filters -->
-				</div> <!-- cd-tab-filter -->
-
-				<div class="col-xs-12 cd-filter">
-					<form>
-						<!--
-						<div class="cd-filter-block">
-							<h4>Suchen</h4>
-							
-							<div class="cd-filter-content">
-								<input type="search" placeholder="Textsuche">
-							</div>
-						</div> 
-						-->
-
-						<div class="cd-filter-block">
-							<h4>System</h4>
-
-							<ul class="cd-filter-content cd-filters list">
-								<li>
-									<input class="filter" data-filter=".trackSystem" type="checkbox" id="checkbox1">
-					    			<label class="checkbox-label" for="checkbox1">Schienensystem</label>
-								</li>
-
-								<li>
-									<input class="filter" data-filter=".plugSystem" type="checkbox" id="checkbox2">
-					    			<label class="checkbox-label" for="checkbox2">Steckkontaktsystem</label>
-								</li>
-
-								<li>
-									<input class="filter" data-filter=".recessedSystem" type="checkbox" id="checkbox3">
-									<label class="checkbox-label" for="checkbox3">Einbausystem</label>
-								</li>
-
-								<li>
-									<input class="filter" data-filter=".cableSystem" type="checkbox" id="checkbox4">
-									<label class="checkbox-label" for="checkbox4">Seilsystem</label>
-								</li>
-							</ul> <!-- cd-filter-content -->
-						</div> <!-- cd-filter-block -->
-						
-						<!--
-						<div class="cd-filter-block">
-							<h4>Select</h4>
-							
-							<div class="cd-filter-content">
-								<div class="cd-select cd-filters">
-									<select class="filter" name="selectThis" id="selectThis">
-										<option value="">Choose an option</option>
-										<option value=".option1">Option 1</option>
-										<option value=".option2">Option 2</option>
-										<option value=".option3">Option 3</option>
-										<option value=".option4">Option 4</option>
-									</select>
-								</div> 
-							</div> 
-						</div>
-						-->
-
-						<div class="cd-filter-block">
-							<h4>Netzwerk</h4>
-
-							<ul class="cd-filter-content cd-filters list">
-								<li>
-									<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-									<label class="radio-label" for="radio1">Alle</label>
-								</li>
-
-								<li>
-									<input class="filter" data-filter=".bus-dali" type="radio" name="radioButton" id="radio2">
-									<label class="radio-label" for="radio2">Dali</label>
-								</li>
-
-								<li>
-									<input class="filter" data-filter=".bus-funk" type="radio" name="radioButton" id="radio3">
-									<label class="radio-label" for="radio3">Funk</label>
-								</li>
-
-								<li>
-									<input class="filter" data-filter=".bus-no" type="radio" name="radioButton" id="radio3">
-									<label class="radio-label" for="radio3">nein</label>
-								</li>
-							</ul> <!-- cd-filter-content -->
-						</div> <!-- cd-filter-block -->
-
-						<a href="#0" class="cd-close"><i class="fa fa-times"></i>  &nbsp;schließen</a>
-					</form>
-				</div> <!-- cd-filter -->
+			<div class="lead">
+				<a class="back" href="index.html"><i class="fa fa-angle-left"></i> zurück</a>
+				<h2 class="color-system">Systemleuchten <span>- Beste Lichtqualität im kleinsten Format.</span></h2>
+				<p>
+					Einfachster mechanischer Aufbau, kleinstmöglicher Querschnitt, hochwertiges und zugleich reduziertes Design - dies sind nur einige der herausragenden Eigenschaften des 24 Volt LED-Schienensystems SMART.TRACK.
+				</p>
+				<p>
+					Sämtliche Leuchten sind mit der bewährten Steckkontakttechnik ausgestattet. Dadurch sind die Leuchten sowohl im 24 Volt LED-Schienensystem SMART.TRACK als auch im 24 Volt LED-Steckkontaktsystem <a class="color-system" href="#">SMART.POINT</a> einsetzbar. Unterschiedliche Lichtfarben und eine homogene Lichtverteilung ermöglichen die individuell gewünschte Raumatmosphäre.
+				</p>
 			</div>
+			<div class="clearfix"></div>
+			<div class="filter-wrapper">
+				<div class="col-lg-2" id="section-filter">
+					<div class="cd-tab-filter">
+						<ul class="cd-filters">
+							<li class="placeholder"> 
+								<a data-type="all" href="#0">Übersicht</a> <!-- selected option on mobile -->
+							</li> 
+							<li class="filter"><a class="selected" href="#0" data-type="all"><span>Übersicht</span></a></li>
+							<li class="filter" data-filter=".voltage-230"><a href="#0" data-type="voltage-230">230 Volt</a></li>
+							<li class="filter" data-filter=".voltage-24"><a href="#0" data-type="voltage-24">24 Volt</a></li>
+							<li class="filter" data-filter=".voltage-12"><a href="#0" data-type="voltage-12">12 Volt</a></li>
+							<li class="filter" data-filter=".voltage-12-24-230"><a href="#0" data-type="voltage-12-24-230">230 / 24 / 12 Volt</a></li>
+							<li>
+								<a href="#0" class="cd-filter-trigger"><i class="fa fa-search"></i> &nbsp;<span>Auswahlkriterien</span></a> 
+							</li>
+						</ul> <!-- cd-filters -->
+					</div> <!-- cd-tab-filter -->
 
-			<div class="col-lg-10 col-lg-offset-2 cd-gallery row">
-				<ul>
-					<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-230 trackSystem bus-dali option2">
-						<a href="#" class="teaser view ">
-							<img src="img/teaser-phase.jpg" alt="PHASE - 230V / Schienensystem">
-							<div class="mask hidden-xs">
-								<p class="btn info">weiter <span>></span></p>
-							</div>
-						</a>
-						<a href="#">PHASE</a>
-					</li>
-					<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-230 trackSystem bus-no option2">
-						<a href="#" class="teaser view ">
-							<img src="img/teaser-check-in.jpg" alt="CHECK-IN - 230V / Schienensystem">
-							<div class="mask hidden-xs">
-		                        <p class="btn info">weiter <span>></span></p>
-		                    </div>
-						</a>
-						<a href="#">CHECK-IN</a>
-					</li>
-					<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-24 plugSystem bus-dali option2">
-						<a href="#" class="teaser view ">
-							<img src="img/teaser-smart-point.jpg" alt="SMART.POINT - 24V / LED-Steckkontaktsystem">
-							<div class="mask hidden-xs">
-								<p class="btn info">weiter <span>></span></p>
-							</div>
-						</a>
-						<a href="#">SMART.POINT</a>
-					</li>
-					<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-24 trackSystem bus-funk option2">
-						<a href="#" class="teaser view ">
-							<img src="img/teaser-smart-track.jpg" alt="SMART.TRACK - 24V / Schienensystem">
-							<div class="mask hidden-xs">
-								<p class="btn info">weiter <span>></span></p>
-							</div>
-						</a>
-						<a href="#">SMART.TRACK</a>
-					</li>
-					<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-12 trackSystem bus-no option2">
-						<a href="#" class="teaser view ">
-							<img src="img/teaser-ready-for-take-off.jpg" alt="READY FOR TAKE OFF - 12V / Schienensystem">
-							<div class="mask hidden-xs">
-								<p class="btn info">weiter <span>></span></p>
-							</div>
-						</a>
-						<a href="#">READY FOR TAKE OFF</a>
-					</li>
-					<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-12 plugSystem bus-no option2">
-						<a href="#" class="teaser view ">
-							<img src="img/teaser-plug-in.jpg" alt="PLUG-IN - 12V / Steckkontaktsystem">
-							<div class="mask hidden-xs">
-								<p class="btn info">weiter <span>></span></p>
-							</div>
-						</a>
-						<a href="#">PLUG-IN</a>
-					</li>
-					<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-12 cableSystem bus-no option2">
-						<a href="#" class="teaser view ">
-							<img src="img/teaser-light-line.jpg" alt="LIGHT-LINE - 12V / Seilsystem">
-							<div class="mask hidden-xs">
-								<p class="btn info">weiter <span>></span></p>
-							</div>
-						</a>
-						<a href="#">LIGHT-LINE</a>
-					</li>
-					<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-12-24-230 recessedSystem bus-dali option3">
-						<a href="#" class="teaser view ">
-							<img src="img/teaser-systemleuchten-shop.jpg" alt="SHOP - 12V, 24V, 230V /Einbausystem">
-							<div class="mask hidden-xs">
-								<p class="btn info">weiter <span>></span></p>
-							</div>
-						</a>
-						<a href="#">SHOP</a>
-					</li>
-					<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-12-24-230 recessedSystem bus-no option2">
-						<a href="#" class="teaser view ">
-							<img src="img/teaser-recessed.jpg" alt="RECESSED - 12V, 24V, 230V / Einbauleuchten">
-							<div class="mask hidden-xs">
-		                        <p class="btn info">weiter <span>></span></p>
-		                    </div>
-						</a>
-						<a href="#">RECESSED</a>
-					</li>
-				</ul>
-				<div class="cd-fail-message">Keine Ergebnisse gefunden :(</div>
-			</div> <!-- cd-gallery -->
+					<div class="col-xs-12 cd-filter">
+						<form>
+							<!--
+							<div class="cd-filter-block">
+								<h4>Suchen</h4>
+								
+								<div class="cd-filter-content">
+									<input type="search" placeholder="Textsuche">
+								</div>
+							</div> 
+							-->
 
+							<div class="cd-filter-block">
+								<h4>System</h4>
 
+								<ul class="cd-filter-content cd-filters list">
+									<li>
+										<input class="filter" data-filter=".trackSystem" type="checkbox" id="checkbox1">
+						    			<label class="checkbox-label" for="checkbox1">Schienensystem</label>
+									</li>
+
+									<li>
+										<input class="filter" data-filter=".plugSystem" type="checkbox" id="checkbox2">
+						    			<label class="checkbox-label" for="checkbox2">Steckkontaktsystem</label>
+									</li>
+
+									<li>
+										<input class="filter" data-filter=".recessedSystem" type="checkbox" id="checkbox3">
+										<label class="checkbox-label" for="checkbox3">Einbausystem</label>
+									</li>
+
+									<li>
+										<input class="filter" data-filter=".cableSystem" type="checkbox" id="checkbox4">
+										<label class="checkbox-label" for="checkbox4">Seilsystem</label>
+									</li>
+								</ul> <!-- cd-filter-content -->
+							</div> <!-- cd-filter-block -->
+							
+							<!--
+							<div class="cd-filter-block">
+								<h4>Select</h4>
+								
+								<div class="cd-filter-content">
+									<div class="cd-select cd-filters">
+										<select class="filter" name="selectThis" id="selectThis">
+											<option value="">Choose an option</option>
+											<option value=".option1">Option 1</option>
+											<option value=".option2">Option 2</option>
+											<option value=".option3">Option 3</option>
+											<option value=".option4">Option 4</option>
+										</select>
+									</div> 
+								</div> 
+							</div>
+							-->
+
+							<div class="cd-filter-block">
+								<h4>Netzwerk</h4>
+
+								<ul class="cd-filter-content cd-filters list">
+									<li>
+										<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+										<label class="radio-label" for="radio1">Alle</label>
+									</li>
+
+									<li>
+										<input class="filter" data-filter=".bus-dali" type="radio" name="radioButton" id="radio2">
+										<label class="radio-label" for="radio2">Dali</label>
+									</li>
+
+									<li>
+										<input class="filter" data-filter=".bus-funk" type="radio" name="radioButton" id="radio3">
+										<label class="radio-label" for="radio3">Funk</label>
+									</li>
+
+									<li>
+										<input class="filter" data-filter=".bus-no" type="radio" name="radioButton" id="radio3">
+										<label class="radio-label" for="radio3">nein</label>
+									</li>
+								</ul> <!-- cd-filter-content -->
+							</div> <!-- cd-filter-block -->
+
+							<a href="#0" class="cd-close"><i class="fa fa-times"></i>  &nbsp;schließen</a>
+						</form>
+					</div> <!-- cd-filter -->
+				</div>
+				<div class="col-lg-10 col-lg-offset-2 cd-gallery row">
+					<ul>
+						<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-230 trackSystem bus-dali option2">
+							<a href="#" class="teaser view ">
+								<img src="img/teaser-phase.jpg" alt="PHASE - 230V / Schienensystem">
+								<div class="mask hidden-xs">
+									<p class="btn info">weiter <span>></span></p>
+								</div>
+							</a>
+							<a href="#">PHASE</a>
+						</li>
+						<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-230 trackSystem bus-no option2">
+							<a href="#" class="teaser view ">
+								<img src="img/teaser-check-in.jpg" alt="CHECK-IN - 230V / Schienensystem">
+								<div class="mask hidden-xs">
+			                        <p class="btn info">weiter <span>></span></p>
+			                    </div>
+							</a>
+							<a href="#">CHECK-IN</a>
+						</li>
+						<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-24 plugSystem bus-dali option2">
+							<a href="#" class="teaser view ">
+								<img src="img/teaser-smart-point.jpg" alt="SMART.POINT - 24V / LED-Steckkontaktsystem">
+								<div class="mask hidden-xs">
+									<p class="btn info">weiter <span>></span></p>
+								</div>
+							</a>
+							<a href="#">SMART.POINT</a>
+						</li>
+						<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-24 trackSystem bus-funk option2">
+							<a href="smart-track.html" class="teaser view ">
+								<img src="img/teaser-smart-track.jpg" alt="SMART.TRACK - 24V / Schienensystem">
+								<div class="mask hidden-xs">
+									<p class="btn info">weiter <span>></span></p>
+								</div>
+							</a>
+							<a href="smart-track.html">SMART.TRACK</a>
+						</li>
+						<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-12 trackSystem bus-no option2">
+							<a href="#" class="teaser view ">
+								<img src="img/teaser-ready-for-take-off.jpg" alt="READY FOR TAKE OFF - 12V / Schienensystem">
+								<div class="mask hidden-xs">
+									<p class="btn info">weiter <span>></span></p>
+								</div>
+							</a>
+							<a href="#">READY FOR TAKE OFF</a>
+						</li>
+						<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-12 plugSystem bus-no option2">
+							<a href="#" class="teaser view ">
+								<img src="img/teaser-plug-in.jpg" alt="PLUG-IN - 12V / Steckkontaktsystem">
+								<div class="mask hidden-xs">
+									<p class="btn info">weiter <span>></span></p>
+								</div>
+							</a>
+							<a href="#">PLUG-IN</a>
+						</li>
+						<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-12 cableSystem bus-no option2">
+							<a href="#" class="teaser view ">
+								<img src="img/teaser-light-line.jpg" alt="LIGHT-LINE - 12V / Seilsystem">
+								<div class="mask hidden-xs">
+									<p class="btn info">weiter <span>></span></p>
+								</div>
+							</a>
+							<a href="#">LIGHT-LINE</a>
+						</li>
+						<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-12-24-230 recessedSystem bus-dali option3">
+							<a href="#" class="teaser view ">
+								<img src="img/teaser-systemleuchten-shop.jpg" alt="SHOP - 12V, 24V, 230V /Einbausystem">
+								<div class="mask hidden-xs">
+									<p class="btn info">weiter <span>></span></p>
+								</div>
+							</a>
+							<a href="#">SHOP</a>
+						</li>
+						<li class="col-md-4 col-sm-6 col-xs-12 mix voltage-12-24-230 recessedSystem bus-no option2">
+							<a href="#" class="teaser view ">
+								<img src="img/teaser-recessed.jpg" alt="RECESSED - 12V, 24V, 230V / Einbauleuchten">
+								<div class="mask hidden-xs">
+			                        <p class="btn info">weiter <span>></span></p>
+			                    </div>
+							</a>
+							<a href="#">RECESSED</a>
+						</li>
+					</ul>
+					<div class="cd-fail-message">Keine Ergebnisse gefunden :(</div>
+				</div> <!-- cd-gallery -->
+			</div>
 
 				<div class="row section-text">
 				</div>
-				
-			
+
+			<!-- FOOTER -->
 			<footer>
 				<div class="row">
 						<a href="#" class="scrolltop">oben</a>
@@ -345,13 +354,13 @@
 						<div class="col-md-2 col-sm-4 col-xs-6">
 							<h3>Produkte</h3>
 							<ul>
-								<li><a href="#">Systemleuchten</a></li>
+								<li><a href="systemleuchten.html">Systemleuchten</a></li>
 								<li><a href="einzelleuchten.html">Einzelleuchten</a></li>
 								<li><a href="oligoplus.html">OLIGO<sup>plus</sup> Kollektion</a></li>
 							</ul>
 						</div>
 						<div class="col-md-2 col-sm-4 col-xs-6">
-							<h3>Media</h3>
+							<h3>Informationen</h3>
 							<ul>
 								<li><a href="produktdaten.html">Produktdaten</a></li>
 								<li><a href="printmedien.html">Printmedien</a></li>
@@ -367,6 +376,7 @@
 								<li><a href="#">Systemtechnik</a></li>
 								<li><a href="#">Sonderlösungen</a></li>
 								<li><a href="#">Vertrieb</a></li>
+								<li><a href="#">Schulungen</a></li>
 								<li><a href="#">FAQ</a></li>
 							</ul>
 						</div>
@@ -386,6 +396,7 @@
 								<li><a href="ansprechpartner.html">Händler</a></li>
 								<li><a href="#">Showroom</a></li>
 								<li><a href="#">Concept Gallery</a></li>
+	                			<li><a href="concept-gallery.html">Online Partner</a></li>
 							</ul>
 						</div>
 						<div class="col-md-2 col-sm-4 col-xs-6">
@@ -422,6 +433,7 @@
 					</div>
 				</div>
 			</footer>
+			
 		</section>
 
 		<script src="js/jquery-1.11.2.min.js"></script>

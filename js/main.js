@@ -210,8 +210,8 @@ $('#player').on('ended', function() {
             enable: false
           },
           animation: {
-            duration: 700,
-            effects: 'fade stagger(250ms)'
+            duration: 400,
+            effects: 'fade stagger(200ms)'
           },
           callbacks: {
             onMixStart: function(){
