@@ -51,7 +51,7 @@
 	              </ul>
 	          	</li>
 	            <li class="dropdown">
-	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service</a>
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a>
 	              <ul class="dropdown-menu">
 	                <li><a href="lichtplanung.html">Lichtplanung</a></li>
 	                <li><a href="#">Systemtechnik</a></li>
@@ -84,7 +84,6 @@
 	              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><sup>my</sup>OLIGO</a>
 	              <ul class="dropdown-menu">
 	                <li><a href="merkzettel.html">Merkzettel <span>0</span></a></li>
-	                <li><a href="vergleich.html">Produktvergleich</a></li>
 	                <li><a href="#">Warenkorb <span>0</span></a></li>
 	              </ul>
 	          	</li>
@@ -137,7 +136,7 @@
 		</section>
 
 
-		<section class="content cd-main-content row">
+		<section class="content cd-main-content">
 			<div class="lead">
 				<a class="back" href="index.html"><i class="fa fa-angle-left"></i> zurück</a>
 				<h2 class="color-single">Einzelleuchten <span>- Beste Lichtqualität im kleinsten Format.</span></h2>
@@ -150,13 +149,14 @@
 			</div>
 			<div class="clearfix"></div>
 			<div class="filter-wrapper">
-				<div class="col-lg-2" id="section-filter">
+				<div class="col-xs-12 col-md-2" id="section-filter">
+					<h3>Kategorie</h3>
 					<div class="col-xs-12 cd-tab-filter">
 						<ul class="cd-filters">
 							<li class="placeholder"> 
-								<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+								<a href="#0">Kategorie</a> <!-- selected option on mobile -->
 							</li> 
-							<li class="filter"><a class="selected" href="#0" data-type="all"><span>Übersicht</span></a></li>
+							<li class="filter"><a class="selected" href="#0" data-type="all"><span>Alle</span></a></li>
 							<li class="filter" data-filter=".light-table"><a href="#0" data-type="table">Tischleuchten</a></li>
 							<li class="filter" data-filter=".light-pendant"><a href="#0" data-type="pendant">Pendelleuchten</a></li>
 							<li class="filter" data-filter=".light-wall"><a href="#0" data-type="wall">Wandleuchten</a></li>
@@ -164,74 +164,39 @@
 							<li class="filter" data-filter=".light-stand"><a href="#0" data-type="stand">Stehleuchten</a></li>
 							<li class="filter" data-filter=".light-object"><a href="#0" data-type="object">Lichtobjekte</a></li>
 							<li class="filter" data-filter=".light-display"><a href="#0" data-type="display">Displayleuchten</a></li>
-							<li>
-								<a href="#0" class="cd-filter-trigger"><i class="fa fa-search"></i> &nbsp;<span>Auswahlkriterien</span></a> 
-							</li>
+							<!--<li>
+								<a href="#0" class="cd-filter-trigger"><i class="fa fa-search"></i> &nbsp;<span>Filter</span></a> 
+							</li>-->
 						</ul> <!-- cd-filters -->
 					</div> <!-- cd-tab-filter -->
-					
-					<div class="col-xs-12 cd-filter">
-						<form>
-							<div class="cd-filter-block">
-								<h4>Suchen</h4>
-								
-								<div class="cd-filter-content">
-									<input type="search" placeholder="Textsuche">
-								</div>
-							</div>
 
-							<div class="cd-filter-block">
-								<h4>Form</h4>
-
-								<ul class="cd-filter-content cd-filters list row">
-									<li class="col-xs-6">
-										<input class="filter" data-filter=".form-round" type="checkbox" id="checkbox1">
-						    			<label class="checkbox-label" for="checkbox1">rund</label>
-									</li>
-
-									<li class="col-xs-6">
-										<input class="filter" data-filter=".form-angular" type="checkbox" id="checkbox2">
-						    			<label class="checkbox-label" for="checkbox2">eckig</label>
-									</li>
-
-									<li class="col-xs-6">
-										<input class="filter" data-filter=".form-big" type="checkbox" id="checkbox3">
-										<label class="checkbox-label" for="checkbox3">groß</label>
-									</li>
-
-									<li class="col-xs-6">
-										<input class="filter" data-filter=".form-small" type="checkbox" id="checkbox4">
-										<label class="checkbox-label" for="checkbox4">klein</label>
-									</li>
-								</ul> <!-- cd-filter-content -->
-							</div>
+						<div class="col-xs-12 cd-subfilter">
+							<h3>Filter</h3>
+							<form>
 							
-							<div class="cd-filter-block">
+							<div class="col-md-12 cd-filter-block">
 								<h4>Preis</h4>
 								
-								<div class="cd-filter-content">
 									<div class="cd-select cd-filters">
 										<select class="filter" name="selectThis" id="selectThis">
-											<option value="">Preisspanne</option>
-											<option value=".filter-price-0-250">0€ - 250€</option>
-											<option value=".filter-price-251-500">251€ - 500€</option>
-											<option value=".filter-price-501-1000">501€ - 1000€</option>
-											<option value=".filter-price-1001-1500">1001€ - 1500€</option>
-											<option value=".filter-price-1501-2500">1501€ - 2500€</option>
-											<option value=".filter-price-2501-4000">2501€ - 4000€</option>
+											<option value="">Preis in €</option>
+											<option value=".filter-price-0-250">0 - 250</option>
+											<option value=".filter-price-251-500">251 - 500</option>
+											<option value=".filter-price-501-1000">501 - 1000</option>
+											<option value=".filter-price-1001-1500">1001 - 1500</option>
+											<option value=".filter-price-1501-2500">1501 - 2500</option>
+											<option value=".filter-price-2501-4000">2501 - 4000</option>
 										</select>
 									</div> 
-								</div> 
 							</div>
 							
 							
-							<div class="cd-filter-block">
+							<div class="col-md-12 cd-filter-block">
 								<h4>Farbe</h4>
 								
-								<div class="cd-filter-content">
 									<div class="cd-select cd-filters">
 										<select class="filter" name="selectThis" id="selectThis">
-											<option value="">alle</option>
+											<option value="">alle Farben</option>
 											<option value=".filter-color-chrome">chrom</option>
 											<option value=".filter-color-silver">silber</option>
 											<option value=".filter-color-black">schwarz</option>
@@ -239,33 +204,28 @@
 											<option value=".filter-color-green">grün</option>
 											<option value=".filter-color-white">weiß</option>
 										</select>
-									</div> 
-								</div> 
+									</div>
 							</div>
 							
 							
-							<div class="cd-filter-block">
+							<div class="col-md-12 cd-filter-block">
 								<h4>Leuchtmittel</h4>
 								
-								<div class="cd-filter-content"s>
 									<div class="cd-select cd-filters">
 										<select class="filter" name="selectThis" id="selectThis">
-											<option value="">Alle</option>
+											<option value="">Alle Leuchtmittel</option>
 											<option value=".filter-type-led">LED</option>
 											<option value=".filter-type-halogen">Halogen</option>
 										</select>
-									</div> 
-								</div> 
+									</div>
 							</div>
-							<div class="cd-filter-block">
-							<a href="#0" class="cd-close"><i class="fa fa-times"></i> schließen</a>
-							</div>
-						</form>
-					</div> <!-- cd-filter -->
+							</form>
+						</div>
 				</div>
+				
 				<div class="col-md-10 col-md-offset-2 cd-gallery row">
 					<ul>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-wall form-small form-big form-angular filter-type-led">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-wall form-small form-big form-angular filter-type-led">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-wall-maven.jpg" alt="MAVEN">
 								<div class="mask hidden-xs">
@@ -274,7 +234,7 @@
 							</a>
 							<a href="#">MAVEN</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-wall form-small form-round filter-type-led">
+						<li class="col-md-4 col-sm-6 col-xs-6 filter-price-0-250 mix light-wall form-small form-round filter-type-led">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-wall-alittlebit.jpg" alt="A LITTLE BIT">
 								<div class="mask hidden-xs">
@@ -283,7 +243,7 @@
 							</a>
 							<a href="#">A LITTLE BIT</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-wall form-small form-round filter-type-led">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-wall form-small form-round filter-type-led">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-wall-justalittle.jpg" alt="JUST A LITTLE">
 								<div class="mask hidden-xs">
@@ -292,7 +252,7 @@
 							</a>
 							<a href="#">JUST A LITTLE</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-wall form-small form-round filter-type-led">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-wall form-small form-round filter-type-led">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-wall-trinity.jpg" alt="TRINITY">
 								<div class="mask hidden-xs">
@@ -301,7 +261,7 @@
 							</a>
 							<a href="#">TRINITY</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-wall form-small form-round filter-type-led">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-wall form-small form-round filter-type-led">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-wall-grace-unltd-led.jpg" alt="GRACE UNLIMITED LED">
 								<div class="mask hidden-xs">
@@ -310,7 +270,7 @@
 							</a>
 							<a href="#">GRACE UNLIMITED LED</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-ceiling form-small form-round filter-type-led">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-ceiling form-small form-round filter-type-led">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-ceiling-trofeo.jpg" alt="TROFEO">
 								<div class="mask hidden-xs">
@@ -319,7 +279,7 @@
 							</a>
 							<a href="#">TROFEO</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-ceiling form-small form-round filter-type-led">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-ceiling form-small form-round filter-type-led">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-ceiling-kelveen.jpg" alt="KELVEEN">
 								<div class="mask hidden-xs">
@@ -328,7 +288,7 @@
 							</a>
 							<a href="#">KELVEEN</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-ceiling form-small form-round filter-type-led filter-type-halogen">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-ceiling form-small form-round filter-type-led filter-type-halogen">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-ceiling-versio.jpg" alt="VERSIO">
 								<div class="mask hidden-xs">
@@ -337,7 +297,7 @@
 							</a>
 							<a href="#">VERSIO</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-ceiling light-wall form-small form-round filter-type-led">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-ceiling light-wall form-small form-round filter-type-led">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-wall-ceiling-kelveen.jpg" alt="KELVEEN">
 								<div class="mask hidden-xs">
@@ -346,7 +306,7 @@
 							</a>
 							<a href="#">KELVEEN</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-wall form-small form-round filter-type-halogen">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-wall form-small form-round filter-type-halogen">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-wall-grace-unltd-led.jpg" alt="GRACE UNLIMITED">
 								<div class="mask hidden-xs">
@@ -355,7 +315,7 @@
 							</a>
 							<a href="#">GRACE UNLIMITED</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-wall form-small form-angular filter-type-halogen">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-wall form-small form-angular filter-type-halogen">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-wall-lx2.jpg" alt="LX 2">
 								<div class="mask hidden-xs">
@@ -364,7 +324,7 @@
 							</a>
 							<a href="#">LX 2</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-wall form-small form-angular filter-type-halogen">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-wall form-small form-angular filter-type-halogen">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-wall-project.jpg" alt="PROJECT">
 								<div class="mask hidden-xs">
@@ -373,7 +333,7 @@
 							</a>
 							<a href="#">PROJECT</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-wall form-small form-angular filter-type-halogen">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-wall form-small form-angular filter-type-halogen">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-wall-project-vertical.jpg" alt="PROJECT VERTICAL">
 								<div class="mask hidden-xs">
@@ -382,7 +342,7 @@
 							</a>
 							<a href="#">PROJECT VERTIVAL</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-wall form-small form-angular filter-type-halogen">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-wall form-small form-angular filter-type-halogen">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-wall-smart-mirror.jpg" alt="SMART MIRROR">
 								<div class="mask hidden-xs">
@@ -391,7 +351,7 @@
 							</a>
 							<a href="#">SMART MIRROR</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-ceiling form-small form-round filter-type-halogen">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-ceiling form-small form-round filter-type-halogen">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-ceiling-level.jpg" alt="LEVEL">
 								<div class="mask hidden-xs">
@@ -400,7 +360,7 @@
 							</a>
 							<a href="#">LEVEL</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-ceiling form-small form-round filter-type-halogen">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-ceiling form-small form-round filter-type-halogen">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-ceiling-light-deck.jpg" alt="LIGHT DECK">
 								<div class="mask hidden-xs">
@@ -409,7 +369,7 @@
 							</a>
 							<a href="#">LIGHT DECK</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-ceiling form-small form-round filter-type-halogen">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-ceiling form-small form-round filter-type-halogen">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-ceiling-twin-lane.jpg" alt="TWIN LANE">
 								<div class="mask hidden-xs">
@@ -418,7 +378,7 @@
 							</a>
 							<a href="#">TWIN LANE</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-ceiling form-big form-round filter-type-halogen">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-ceiling form-big form-round filter-type-halogen">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-ceiling-gatsby.jpg" alt="GATSBY">
 								<div class="mask hidden-xs">
@@ -427,7 +387,7 @@
 							</a>
 							<a href="#">GATSBY</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-pendant form-small form-round filter-type-led">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-pendant form-small form-round filter-type-led">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-pendant-trofeo.jpg" alt="TROFEO">
 								<div class="mask hidden-xs">
@@ -436,7 +396,7 @@
 							</a>
 							<a href="#">TROFEO</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-pendant form-small form-round filter-type-led">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-pendant form-small form-round filter-type-led">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-pendant-trinity.jpg" alt="TRINITY">
 								<div class="mask hidden-xs">
@@ -445,7 +405,7 @@
 							</a>
 							<a href="#">TRINITY</a>
 						</li>
-						<li class="col-md-4 col-sm-6 col-xs-12 mix light-pendant form-big form-angular filter-type-led">
+						<li class="col-md-4 col-sm-6 col-xs-6 mix light-pendant form-big form-angular filter-type-led">
 							<a href="#" class="teaser view ">
 								<img src="img/product/product-pendant-lisgo-sky-short.jpg" alt="LISGO SKY SHORT">
 								<div class="mask hidden-xs">
@@ -459,22 +419,32 @@
 				</div> <!-- cd-gallery -->
 			</div>
 
-
-			<div class="row section-text">
-				<div class="col-md-8 col-md-offset-2">
-					<h3>SYSTEMLEUCHTEN</h3>
-					<h3>KLEIN, KLEINER, OLIGO</h3>
-					<p>Für den Wohnraum entwickeln wir Leuchten, die sich formal zurücknehmen und dem Licht die Bühne bereiten. Die kühne Kombination der Werkstoffe Metall, Glas und Licht beflügelt unsere Kreativität.</p>
+<!--
+  			<div class="row section-text">
+				<div class="col-md-10 col-md-offset-1">
+					<h3 class="color-single">Impressionen</h3>
+					<a href="impressionen.html"><img src="http://www.placehold.it/1200x250" alt="" class="img-responsive"></a>
+				</div>
+				<div class="col-md-10 col-md-offset-1">
+					<p>
+						Für den Wohnraum entwickeln wir Leuchten, die sich formal zurücknehmen und dem Licht die Bühne bereiten. Die kühne Kombination der Werkstoffe Metall, Glas und Licht beflügelt unsere Kreativität.
+					</p>
 				</div>
 				<div class="col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-2">
-					<a href="systemleuchten.html" class="center-block btn btn-full">Systemleuchten</a>
+					<a href="impressionen.html" class="center-block btn btn-full btn-single">Impressionen</a>
 				</div>
 			</div>
+-->
 
-			<div class="row section-teaser">
-				<div class="col-md-12">
-					<div class="teaser-lg">
-					</div>
+  			<div class="row section-text">
+				<div class="col-md-10 col-md-offset-1">
+					<h3 class="color-single">Impressionen</h3>
+					<a href="impressionen.html" class="teaser view ">
+						<img src="img/teaser-lg-impression-el.jpg" alt="" class="img-responsive">
+						<div class="mask hidden-xs">
+	                        <p class="btn info">weiter <span>></span></p>
+	                    </div>
+					</a>
 				</div>
 			</div>
 

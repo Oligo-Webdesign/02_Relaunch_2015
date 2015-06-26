@@ -14,6 +14,60 @@ $(document).ready(
 
 $("body").addClass("load");
 
+
+  $('[data-toggle="tooltip"]').tooltip({
+    cssClass : 'tooltip'
+});
+
+
+
+
+
+//########
+//Set default open/close settings
+$('.notepad-item-container').hide(); //Hide/close all containers
+
+    //On Click
+$('.notepad-item-trigger').click(function(){
+    var $this = $(this),
+        thisActive = $this.hasClass('active'),
+        active;
+    
+    // If this one is active, we always just close it.
+    if (thisActive) {
+        $this.removeClass('active').next().slideUp(300);
+    }
+    else {
+        // Is there just one active?
+        active = $('.notepad-item-trigger.active');
+        if (active.length === 1) {
+            // Yes, close it
+            active.removeClass('active').next().slideUp(300);
+        }
+        
+        // Open this one
+        $this.addClass('active').next().slideDown(2000);
+    }
+});
+
+    $('.notepad-item-expand-all').click(function(){
+        var all = $('.notepad-item-trigger'),
+            active = all.filter('.active');
+        
+        if (all.length && all.length === active.length) {
+            // All open; close them
+            all.removeClass('active').next().slideUp(300);
+        }
+          else {
+            all.not('.active').addClass('active').next().slideDown(2000);
+        }
+
+        return false;
+    });
+
+//##########
+
+
 // #######################  Deatil Controls  #######################
     $(".btn-remember").click(function(){
         $(".btn-remember").toggleClass("btn-active");
@@ -54,6 +108,8 @@ $('#carousel-static').carousel({ interval: 6000 });
 new UISearch( document.getElementById( 'sb-search' ) );
 
 // Background-Video
+
+/*
 $(window).on('load resize', function() {
   if ($(window).width() > 1200) {
        $( "#hero-video" ).load("video.html video");
@@ -83,7 +139,7 @@ $(window).on('load resize', function() {
         };
  }
 });
-
+*/
 // ####################### AUDIO PLAYER  ############################
 var getaudio = $('#player')[0];
 var mouseovertimer;
@@ -159,7 +215,7 @@ $('#player').on('ended', function() {
 
       //mobile version - detect click event on filters tab
       var filter_tab_placeholder = $('.cd-tab-filter .placeholder a'),
-        filter_tab_placeholder_default_value = 'Select',
+        filter_tab_placeholder_default_value = 'SCHLIESSEN',
         filter_tab_placeholder_text = filter_tab_placeholder.text();
       
       $('.cd-tab-filter li').on('click', function(event){
@@ -187,7 +243,7 @@ $('#player').on('ended', function() {
           $(event.target).addClass('selected');
         }
       });
-      
+
       //close filter dropdown inside lateral .cd-filter 
       $('.cd-filter-block h4').on('click', function(){
         $(this).toggleClass('closed').siblings('.cd-filter-content').slideToggle(300);
