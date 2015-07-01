@@ -1,3 +1,15 @@
+$(document).ready(function() {
+    
+
+    $("#single_4").fancybox({
+      helpers : {
+        title : {
+          type : 'over'
+        }
+      }
+    });
+});
+
 // #######################  NiceScroll  #######################
 $(document).ready(
   function() {
@@ -15,16 +27,15 @@ $(document).ready(
 $("body").addClass("load");
 
 
+
+
+
+// #######################  TOOLTIP  #######################
   $('[data-toggle="tooltip"]').tooltip({
     cssClass : 'tooltip'
 });
 
-
-
-
-
-//########
-//Set default open/close settings
+// #######################  NOTEPAD COMPARE  #######################
 $('.notepad-item-container').hide(); //Hide/close all containers
 
     //On Click
@@ -65,9 +76,6 @@ $('.notepad-item-trigger').click(function(){
         return false;
     });
 
-//##########
-
-
 // #######################  Deatil Controls  #######################
     $(".btn-remember").click(function(){
         $(".btn-remember").toggleClass("btn-active");
@@ -107,39 +115,6 @@ $('#carousel-static').carousel({ interval: 6000 });
 // #######################  Nav-Search  #######################
 new UISearch( document.getElementById( 'sb-search' ) );
 
-// Background-Video
-
-/*
-$(window).on('load resize', function() {
-  if ($(window).width() > 1200) {
-       $( "#hero-video" ).load("video.html video");
-           $(window).scroll(function(e){
-      parallax();
-      });
-      function parallax(){
-          var scrolled = $(window).scrollTop();
-              $('.hero').css('top',-(scrolled*0.0200)+'rem');
-              $('.hero > div').css('top',-(scrolled*-0.005)+'rem');
-              $('.hero > div ').css('opacity',1-(scrolled*.0008));
-      };
-      $('#filter-affix').affix({
-        offset: {
-          top: 1100
-        }
-      });
-  }
- else {
-    $( "#hero-video" ).css('background-image', "img/head-oligplus.jpg");
-      $(window).scroll(function(e){ parallax(); });
-        function parallax(){
-            var scrolled = $(window).scrollTop();
-                $('.hero').css('top',-(scrolled*0.0000)+'rem');
-                $('.hero > div').css('top',-(scrolled*-0.000)+'rem');
-                $('.hero > div ').css('opacity',1-(scrolled*.0008));
-        };
- }
-});
-*/
 // ####################### AUDIO PLAYER  ############################
 var getaudio = $('#player')[0];
 var mouseovertimer;

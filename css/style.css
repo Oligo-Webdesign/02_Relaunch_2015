@@ -302,24 +302,12 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button { display:
 
 
 /*############################################## YOU-TUBE VIDEOS ####*/
-.video-container {
-    position:       relative;
-    padding-bottom: 50.25%;
-    width:          90%;
-    margin:         25px auto 0;
-    padding-top:    30px; 
-    height:         0; 
+.container-video {
+	width: 100%;
+    min-height: 500px; 
+    height:         auto; 
     overflow:       hidden;
 }
-	.video-container iframe,
-	.video-container object,
-	.video-container embed {
-	    position: absolute;
-	    top:      0;
-	    left:     0;
-	    width:    100%;
-	    height:   85%;
-	}
 
 /*############################################## SECTION-GENERAL ####*/
 #static .section-text { padding: 80px 0 25px; }
@@ -365,12 +353,9 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button { display:
 
 /* ### Section-Data ### */
 	.section-data { 
-		padding: 50px 0 0;
+		padding: 0;
 		margin:  0 auto 35px;
 		width:   90%;
-	}
-	.tab-content {
-		margin-top: 65px;
 	}
 		.section-data .data-teaser { 
 			margin: 25px auto;
@@ -1435,17 +1420,11 @@ footer {
 }
 
 /*############################################### FILTER ####*/
-#section-filter { 
-	-webkit-box-shadow: -20px -5px 15px 0px rgba(0,0,0,0.1);
-	-moz-box-shadow:    -20px -5px 15px 0px rgba(0,0,0,0.1);
-	box-shadow:         -20px -5px 15px 0px rgba(0,0,0,0.1);
-	margin-bottom:      50px; 
-	padding:            25px;
-}
-#section-filter h3 { font-size: 1em }
+#section-filter { margin-bottom: 50px; }
+#section-filter h3 { font-size:  1em }
 
 .filter-wrapper {
-	width: 90%;
+	width:  90%;
 	margin: 25px auto 0;
 }
 
@@ -1461,9 +1440,9 @@ footer {
 	}
 	.cd-main-content.is-fixed .cd-tab-filter-wrapper {
 	  position: fixed;
-	  top: 0;
-	  left: 0;
-	  width: 100%;
+	  top:      0;
+	  left:     0;
+	  width:    100%;
 	}
 	.cd-main-content.is-fixed .cd-gallery { padding-top: 76px; }
 	.cd-main-content.is-fixed .cd-filter {
@@ -1490,13 +1469,13 @@ footer {
 	}
 
 .cd-tab-filter {
-  position: relative;
-  height:   auto;
-  width:    100%;
-  margin:   15px auto;
-  z-index:  999;
-  top: 0 !important;
-  display: block;
+  position:   relative;
+  height:     auto;
+  width:      100%;
+  margin:     15px auto;
+  z-index:    999;
+  top:        0 !important;
+  display:    block;
   text-align: center;
 }
 	.cd-tab-filter::after {
@@ -1520,7 +1499,7 @@ footer {
 	  pointer-events:     none;
 	}
 	.cd-tab-filter ul {
-	  width: 100%;
+	  width:            100%;
 	  position:         absolute;
 	  top:              0;
 	  left:             0;
@@ -1528,7 +1507,7 @@ footer {
 	}
 		.cd-tab-filter li { display: none; }
 			.cd-tab-filter li span { 
-				color: #a29d86;
+				color:       #a29d86;
 				font-family: 'thesans-semilight';
 			}
 			.cd-tab-filter li:first-child { display: block; }
@@ -1553,23 +1532,23 @@ footer {
 			  transform:         translateY(-50%) rotate(-180deg);
 			}
 .cd-tab-filter.is-open ul { 
-	z-index: 999; 
+	z-index:    999; 
 	background: #fff;
-	position: absolute;
+	position:   absolute;
 }
 .cd-tab-filter.is-open ul li { display: block; }
 .cd-tab-filter.is-open .placeholder a { opacity: .4; }
 
 .cd-subfilter form {
 	position: relative;
-	z-index: 998;
-	margin: 0 auto;
+	z-index:  998;
+	margin:   0 auto;
 }
 
 .cd-subfilter {
-	display: block;
-	width: 100%;
-	height: auto;
+	display:    block;
+	width:      100%;
+	height:     auto;
 	min-height: 250px;
 	margin-top: 70px;
 }
@@ -1592,20 +1571,20 @@ footer {
 
 
 .cd-filters {
-  padding: 0 10px;
-  border-left:          1px solid rgba(57,57,57,.05);
-  border-right:       1px solid rgba(57,57,57,.05);
+  padding:      0 10px;
+  border-left:  1px solid rgba(57,57,57,.05);
+  border-right: 1px solid rgba(57,57,57,.05);
 }
 
 /* styling */
 .cd-filter-block select {
-	z-index: 999;
-  width:               100%;
-  padding:             .75em .5em .5em .5em;
-  background-color:    transparent;
-  background-image:    url(../img/cd-icon-arrow.svg);
-  background-position: right;
-  background-repeat:   no-repeat;
+	z-index:             999;
+	width:               100%;
+	padding:             .75em .5em .5em .5em;
+	background-color:    transparent;
+	background-image:    url(../img/cd-icon-arrow.svg);
+	background-position: right;
+	background-repeat:   no-repeat;
 }
 
 .cd-filter-block select:hover {
@@ -1684,75 +1663,6 @@ footer {
 	opacity: 1;
 	left:    0;
 }
-
-/*##################################################### COMPARE ####*/
-.compare { margin: 25px auto 50px; }
-
-.compare-item { padding: 0 10px; }
-
-.compare-empty, .compare-product {
-	display: block;
-	position: relative;
-}
-
-.compare-empty {
-	border:     1px dashed #575756;
-	text-align: center;
-}
-	.compare-empty .add-product {
-		display: block;
-		margin: 85px auto;
-		width: 80%;
-	}
-		.compare-empty .add-product p { margin: 10px auto; }
-
-.compare-product {
-	background-color:      #f8f8f8;
-	-webkit-border-radius: 5px;
-	-moz-border-radius:    5px;
-	border-radius:         5px;
-	padding:               15px;
-	margin-bottom:         10px;
-	-webkit-box-shadow:    -2px 2px 5px 0px rgba(0,0,0,0.2);
-	-moz-box-shadow:       -2px 2px 5px 0px rgba(0,0,0,0.2);
-	box-shadow:            -2px 2px 5px 0px rgba(0,0,0,0.2);
-	font-size:             0.75em;
-}
-	.compare-product img {
-		display: block;
-		margin: 15px auto;
-	}
-	.compare-product h2, .compare-product h3 { text-align: center; }
-	.compare-product h2 { font-size: 2em }
-	.compare-product h3 { font-size: 1.4em }
-	.compare-product .compare-section { margin: 20px auto; }
-		.compare-product .compare-section td:first-child {
-			text-align: right;
-			padding-right: 10px;
-		}
-		.compare-product .compare-section td:last-child { padding-left: 10px; }
-		.compare-product .compare-section ul {
-			width: 70%;
-			margin: 0 0 0 30%;
-			list-style-type: circle; 
-		}
-		.compare-product .compare-section table {
-			width: 80%;
-			margin: 0 15% 0 5%;
-		}
-	.compare-product .addto-cart {
-		padding-top: 20px;
-		margin: 10px auto;
-	}
-		.compare-product .addto-cart a {
-			padding: 15px 35px;
-			font-size: 1.4em;
-		}
-			.compare-product .addto-cart a i {
-				padding: 0 8px 0 0;
-			}
-
-
 
 /*############################################### CONTACT-FORM ####*/
 #feedbackForm { padding-top: 10px; }
