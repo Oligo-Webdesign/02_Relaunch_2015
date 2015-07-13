@@ -1,15 +1,3 @@
-$(document).ready(function() {
-    
-
-    $("#single_4").fancybox({
-      helpers : {
-        title : {
-          type : 'over'
-        }
-      }
-    });
-});
-
 // #######################  NiceScroll  #######################
 $(document).ready(
   function() {
@@ -26,53 +14,64 @@ $(document).ready(
 
 $("body").addClass("load");
 
-
-
-
-
 // #######################  TOOLTIP  #######################
-  $('[data-toggle="tooltip"]').tooltip({
-    cssClass : 'tooltip'
+$('[data-toggle="tooltip"]').tooltip({
+  cssClass : 'tooltip'
 });
 
 // #######################  NOTEPAD COMPARE  #######################
-$('.notepad-item-container').hide(); //Hide/close all containers
+$('.notepad-item-container').hide(); 
 
-    //On Click
 $('.notepad-item-trigger').click(function(){
     var $this = $(this),
         thisActive = $this.hasClass('active'),
         active;
-    
-    // If this one is active, we always just close it.
     if (thisActive) {
         $this.removeClass('active').next().slideUp(300);
     }
     else {
-        // Is there just one active?
         active = $('.notepad-item-trigger.active');
         if (active.length === 1) {
-            // Yes, close it
             active.removeClass('active').next().slideUp(300);
         }
-        
-        // Open this one
         $this.addClass('active').next().slideDown(2000);
     }
 });
 
-    $('.notepad-item-expand-all').click(function(){
-        var all = $('.notepad-item-trigger'),
+    $('.notepad-item-el-expand-all').click(function(){
+        var all = $('.notepad-item-el-trigger'),
             active = all.filter('.active');
         
         if (all.length && all.length === active.length) {
-            // All open; close them
             all.removeClass('active').next().slideUp(300);
         }
           else {
             all.not('.active').addClass('active').next().slideDown(2000);
         }
-
+        return false;
+    });
+    $('.notepad-item-sl-expand-all').click(function(){
+        var all = $('.notepad-item-sl-trigger'),
+            active = all.filter('.active');
+        
+        if (all.length && all.length === active.length) {
+            all.removeClass('active').next().slideUp(300);
+        }
+          else {
+            all.not('.active').addClass('active').next().slideDown(2000);
+        }
+        return false;
+    });
+    $('.notepad-item-oplus-expand-all').click(function(){
+        var all = $('.notepad-item-oplus-trigger'),
+            active = all.filter('.active');
+        
+        if (all.length && all.length === active.length) {
+            all.removeClass('active').next().slideUp(300);
+        }
+          else {
+            all.not('.active').addClass('active').next().slideDown(2000);
+        }
         return false;
     });
 
@@ -172,7 +171,7 @@ $('#player').on('ended', function() {
 
 // ####################### GRID-FILTER  ############################
 
-    $(document).ready(function($){
+  $(document).ready(function($){
       //open/close lateral filter
       $('.cd-filter-trigger').on('click', function(){
         triggerFilter(true);
@@ -361,15 +360,12 @@ $('#player').on('ended', function() {
         }
     };
 
-
-
 // ####################### CONTACT FORM  ############################
      $(document).ready(function() {
   $("#feedbackSubmit").click(function() {
-    //clear any errors
+
     contactForm.clearErrors();
  
-    //do a little client-side validation -- check that each field has a value and e-mail field is in proper format
     var hasErrors = false;
     $('#feedbackForm input,textarea').each(function() {
       if (!$(this).val()) {
@@ -382,13 +378,10 @@ $('#player').on('ended', function() {
       hasErrors = true;
       contactForm.addError($email);
     }
- 
-    //if there are any errors return without sending e-mail
     if (hasErrors) {
       return false;
     }
- 
-    //send the feedback e-mail
+
     $.ajax({
       type: "POST",
       url: "#",
@@ -396,7 +389,6 @@ $('#player').on('ended', function() {
       success: function(data)
       {
         contactForm.addAjaxMessage(data.message, false);
-        //get new Captcha on success
         $('#captcha').attr('src', 'securimage/securimage_show.php?' + Math.random());
       },
       error: function(response)
@@ -407,8 +399,6 @@ $('#player').on('ended', function() {
     return false;
   }); 
 });
- 
-//namespace as not to pollute global namespace
 var contactForm = {
   isValidEmail: function (email) {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
