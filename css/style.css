@@ -1240,12 +1240,6 @@ footer {
 	display: block;
 }
 
-.cd-subfilter form {
-	position: relative;
-	z-index:  998;
-	margin:   0 auto;
-}
-
 .cd-subfilter {
 	display:    block;
 	width:      100%;
@@ -1253,6 +1247,11 @@ footer {
 	min-height: 250px;
 	padding-top: 60px;
 }
+	.cd-subfilter form {
+		position: relative;
+		z-index:  998;
+		margin:   0 auto;
+	}
 
 .cd-filter-block {
 	z-index: 999 !important;
@@ -1307,7 +1306,6 @@ footer {
 		}
 
 .all-items {
-	margin-bottom: 40px;
 	cursor: pointer;
 }
 
@@ -1926,6 +1924,15 @@ tfoot {
 			.is-open {background: red !important;}
 		.cd-tab-filter.is-open ul li { display: block; }
 	.cd-subfilter { padding: 40px 0 0 0; }
+	.filter-wrapper p {
+		color: #575756 !important;
+		font-size: .8em;
+		margin: 0 0 25px 0;
+	}
+		.filter-wrapper p i {
+			margin-right: 10px;
+		font-size: .9em;
+		}
 }
 
 @media only screen and (min-width: 767px) { .cd-main-content.is-fixed .cd-gallery { padding-top: 90px; } }
