@@ -134,12 +134,16 @@
             <i class="fa fa-angle-right fa-2x"></i>
             <span class="sr-only">Weiter</span>
           </a>
+	          <a id="arrow-down" class="down" href="#top" role="button">
+	            <i class="fa fa-angle-down fa-2x"></i>
+	            <span class="sr-only">runter</span>
+	          </a>
         </div>
 
 	</section>
 
 	<!-- Content -->
-	<section id="content" class="content">
+	<section id="top content" class="content">
 	
 			<div class="main-content">
 				<div class="lead">
@@ -150,15 +154,16 @@
 			<div class="section-detail section-wrapper">
 				<div class="row">
 					<div class="content-left col-md-5">
-					<div>
-						<img class="img-responsive center-block" src="img/detail/trinity-table-section-info.png" alt="TRINITY - Tischleuchte">
-					</div></div>
+						<div>
+							<img class="img-responsive center-block" src="img/detail/trinity-table-section-info.png" alt="">
+						</div>
+					</div>
 					<div class="content-right col-md-7">
 						<section>
 							<h2 class="color-oplus">Trinity</h2>
 							<h4 class="color-oplus">Tischleuchte</h4>			
 						</section>
-						<section>
+						<!--<section>
 							<h4>Awards</h4>
 							<div class="row">
 								<div class="col-xs-12">
@@ -169,7 +174,7 @@
 									</ul>
 								</div>
 							</div>
-						</section>
+						</section>-->
 						<section>
 							<ul>
 								<li>- hochwertige Tischleuchte mit Prestigecharakter</li>
@@ -178,7 +183,15 @@
 							</ul>
 						</section>
 						<section>
-							<h4 class="color-oplus">Preis</h4>
+							<h4 class="color-system">Farben</h4>
+							<div>
+								<select name="colorpicker-fontawesome">
+									<option value="#d7dee3">chrom</option>
+								</select>
+							</div>
+						</section>
+						<section>
+							<h4 class="color-system">Preis</h4>
 							<div>
 								<p class="price">
 									899 € 
@@ -186,33 +199,25 @@
 								</p>
 							</div>
 						</section>
-						<section>
-							<h4 class="color-oplus">Farben</h4>
-							<div>
-								<select name="colorpicker-fontawesome">
-									<option value="#d7dee3">chrom</option>
-								</select>
-							</div>
-						</section>
 						<div class="clearfix"></div>
 						<section class="section-controls">
 							<div class="row">
-								<div class="col-xs-6 col-md-3">
+								<div class="col-xs-6 col-sm-3">
 									<button class="btn-hover" data-toggle="modal" data-target="#modal-datasheet">
 									  <i class="fa fa-list"></i> <br> Datenblatt
 									</button>
 								</div>
-								<div class="col-xs-6 col-md-3">
+								<div class="col-xs-6 col-sm-3">
 									<button class="btn-hover" data-toggle="modal" data-target="#modal-imagedownload">
 									  <i class="fa fa-camera-retro"></i> <br> Produktfotos
 									</button>
 								</div>
-								<div class="col-xs-6 col-md-3">
+								<div class="col-xs-6 col-sm-3">
 									<button class="btn-hover btn-remember"  href="#">
 									  <i class="fa fa-thumb-tack"></i> <br> Merkzettel
 									</button>
 								</div>
-								<div class="col-xs-6 col-md-3">
+								<div class="col-xs-6 col-sm-3">
 									<button class="btn-hover btn-cart"  href="#">
 									  <i class="fa fa-shopping-cart"></i> <br> Warenkorb
 									</button>
@@ -226,11 +231,6 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div id="carousel-impression" class="carousel slide carousel-fade" data-ride="carousel">
-					  <ol class="carousel-indicators">
-					    <li data-target="#carousel-impression" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-impression" data-slide-to="1"></li>
-					    <li data-target="#carousel-impression" data-slide-to="2"></li>
-					  </ol>
 					  <div class="carousel-inner" role="listbox">
 					    <div class="item active">
 					      	<img class="img-responsive center-block" src="img/detail/trinity-table-impression-01.jpg" alt="">
@@ -255,10 +255,10 @@
 			</div>
 
 			<div class="row section-feature">
-				<div class="col-xs-4">
+				<div class="col-xs-6 col-md-4">
 					<img src="img/detail/trinity-table-feature-01.png" alt="" class="img-responsive">
 				</div>
-				<div class="col-xs-8 col-xs-offset-4 link-hover">
+				<div class="col-xs-6 col-xs-offset-6 col-md-7 col-md-offset-5 link-hover">
 					<h3>Licht ist Magie</h3>
 					<h4>Gestensteuerung</h4>
 					<p class="hidden-xs">
@@ -553,7 +553,7 @@
 
 		<!-- Modal - Image Download -->
 		<div class="modal fade" id="modal-imagedownload" tabindex="-1" role="dialog" aria-labelledby="Datasheet" aria-hidden="true">
-		  <div class="modal-dialog">
+		  <div class="modal-dialog modal-lg">
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
@@ -563,13 +563,13 @@
 		      <div class="modal-body">
 		      	<div class="row">
 		      		<div class="col-md-12">
-		      			<div class="col-md-12">
+		      			<div class="col-md-6 col-xs-12">
 		      				<a href="#">
 		      					<img class="img-responsive" src="img/detail/trinity-table-modal-product.jpg">
 		      					<p>Produktfotos</p>
 		      				</a>
 		      			</div>
-		      			<div class="col-md-12">
+		      			<div class="col-md-6 col-xs-12">
 		      				<a href="#">
 		      					<img class="img-responsive" src="img/detail/trinity-table-modal-impression.jpg">
 		      					<p>Ambientefotos</p>
@@ -589,6 +589,7 @@
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
 	 <script src="js/jquery.nicescroll.js"></script>
 	<script src="js/jquery.simplecolorpicker.js"></script>
 	<script src="js/classie.js"></script>

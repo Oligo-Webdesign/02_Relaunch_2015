@@ -10,8 +10,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<script src="js/modernizr.custom.js"></script>
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap-datetimepicker.min.css"rel="stylesheet" type="text/css">
 		<link href="css/style.css" rel="stylesheet" media="screen">
 	</head>
 
@@ -129,11 +130,15 @@
 	            <i class="fa fa-angle-right fa-2x"></i>
 	            <span class="sr-only">Weiter</span>
 	          </a>
+	          <a id="arrow-down" class="down" href="#top" role="button">
+	            <i class="fa fa-angle-down fa-2x"></i>
+	            <span class="sr-only">runter</span>
+	          </a>
 	        </div>
 		</section>
 
 
-		<section class="content">
+		<section id="top" class="content">
 			
 			<div class="main-content">
 				<div class="lead">
@@ -147,64 +152,170 @@
 					<div class="row">
 						<div class="col-sm-4">
 							<img class="img-responsive" src="img/training-teaser-24V.jpg" alt="">
-					  		<p class="col-md-12 date">Montag, 25.11.2015</p>
+					  		<p class="col-md-12 teaser-date">Montag, 25.11.2015</p>
 							<h3>24 Volt Systemtechnik</h3>
 							<p>
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 							</p>
-						    <a href="#">Jetzt anmelden <span>></span></a>
+						    <a href="#" data-toggle="modal" data-target="#modalLightorial">Jetzt anmelden <span>></span></a>
 						</div>
 						<div class="col-sm-4">
 							<img class="img-responsive" src="img/training-teaser-produktneuheiten.jpg" alt="">
-					  		<p class="col-md-12 date">Montag, 25.11.2015</p>
+					  		<p class="col-md-12 teaser-date">Montag, 25.11.2015</p>
 							<h3>Entwurf</h3>
 							<p>
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 							</p>
-						    <a href="#">Jetzt anmelden <span>></span></a>
+						    <a href="#" data-toggle="modal" data-target="#modalLightorial">Jetzt anmelden <span>></span></a>
 						</div>
 						<div class="col-sm-4">
 							<img class="img-responsive" src="img/training-teaser-dialux.jpg" alt="">
-					  		<p class="col-md-12 date">Montag, 25.11.2015</p>
+					  		<p class="col-md-12 teaser-date">Montag, 25.11.2015</p>
 							<h3>Leistungsdaten</h3>
 							<p>
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
 							</p>
-						    <a href="#">Jetzt anmelden <span>></span></a>
+						    <a href="#" data-toggle="modal" data-target="#modalLightorial">Jetzt anmelden <span>></span></a>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-4">
 							<img class="img-responsive" src="img/training-teaser-24V.jpg" alt="">
-					  		<p class="col-md-12 date">Montag, 25.11.2015</p>
+					  		<p class="col-md-12 teaser-date">Montag, 25.11.2015</p>
 							<h3>24 Volt Systemtechnik</h3>
 							<p>
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 							</p>
-						    <a href="#">Jetzt anmelden <span>></span></a>
+						    <a href="#" data-toggle="modal" data-target="#modalLightorial">Jetzt anmelden <span>></span></a>
 						</div>
 						<div class="col-sm-4">
 							<img class="img-responsive" src="img/training-teaser-produktneuheiten.jpg" alt="">
-					  		<p class="col-md-12 date">Montag, 25.11.2015</p>
+					  		<p class="col-md-12 teaser-date">Montag, 25.11.2015</p>
 							<h3>Entwurf</h3>
 							<p>
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 							</p>
-						    <a href="#">Jetzt anmelden <span>></span></a>
+						    <a href="#" data-toggle="modal" data-target="#modalLightorial">Jetzt anmelden <span>></span></a>
 						</div>
 						<div class="col-sm-4">
 							<img class="img-responsive" src="img/training-teaser-dialux.jpg" alt="">
-					  		<p class="col-md-12 date">Montag, 25.11.2015</p>
+					  		<p class="col-md-12 teaser-date">Montag, 25.11.2015</p>
 							<h3>Leistungsdaten</h3>
 							<p>
 								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
 							</p>
-						    <a href="#">Jetzt anmelden <span>></span></a>
+						    <a href="#" data-toggle="modal" data-target="#modalLightorial">Jetzt anmelden <span>></span></a>
 						</div>
 					</div>
 					<div class="clearfix"></div>
+					<div id="contact_form" class="row">
+						<div class="">
+							<h2>Sie vermissen ein Thema?</h2>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+							 <form class="col-md-12 form-horizontal" role="form">
+							 	<div class="col-md-4 block">
+									<p>
+										Email: <a href="#0">lightorial@oligo.de</a>
+									</p>
+									<p>
+										Telefon: (+49) 02242-8702-xxx
+									</p>
+									<p>
+										Fax: (+49) 02242-8702-xxx
+									</p>
 
+							 	</div>
+							 	<div class="col-md-8 block">
+									<div class="form-group">
+									    <label class="control-label col-sm-3" for="datefield">Terminwunsch: </label>
+										<div id="datepicker" class="col-sm-4 input-group date" data-date-format="DD, dd.mm.yyyy">
+										    <input id="datefield" class="form-control" type="text" placeholder="z.B. Donnerstag, 12.06.2016" readonly />
+										    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="thema">Themenwunsch:</label>
+										<div class="col-sm-9">
+										  <input type="text" class="form-control" id="thema" placeholder="z.B. Lichtlösungen für große Räume">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="name">Name:</label>
+										<div class="col-sm-9">
+										  <input type="text" class="form-control" id="name" placeholder="Max Mustermann">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="email">Email:</label>
+										<div class="col-sm-9">
+										  <input type="email" class="form-control" id="email" placeholder="max.mustermann@oligo.de">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="message">Nachricht</label>
+										 <div class="col-sm-9">
+											<textarea rows="3" cols="100" class="form-control" id="message" name="message" placeholder="Was möchten Sie uns sagen? (z.B. Teilnehmerzahl)"></textarea>
+											<span class="help-block" style="display: none;">Bitte geben Sie Ihre Nachricht ein.</span>
+										</div>
+									</div>
+							 	</div>
+								<a style="margin-top:25px;" type="submit" id="#" class="col-md-2 col-md-offset-10 text-right">Absenden ></a>
+							</form>
+						</div>
+					</div>
 				</div>
+			</div>
+
+
+			<!-- Modal -->
+			<div class="modal fade" id="modalLightorial" tabindex="-1" role="dialog" aria-labelledby="modalLightorial">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="modalLightorial">Anmeldung zum Lightorial</h4>
+			      </div>
+					<div class="modal-body">
+						<form role="form">
+							<div class="form-group">
+								<label for="thema">Themenauswahl:</label>
+							    <select class="">
+									  <option>25.11.2015 - 24 Volt Systemtechnik</option>
+									  <option>14.12.2015 - Produktneuheiten 2016</option>
+									  <option>01.02.2016 - Lichtplanung mit DialLUX</option>
+									  <option>25.04.2016 - 24 Volt Systemtechnik</option>
+									  <option>15.05.2016 - Produktneuheiten 2016</option>
+									  <option>31.07.2016 - Lichtplanung mit DialLUX</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="user">Vorname, Name:</label>
+								<input type="text" class="form-control" id="user" placeholder="Max Mustermann">
+							</div>
+							<div class="form-group">
+								<label for="email">Email-Adresse:</label>
+								<input type="email" class="form-control" id="email" placeholder="max.mustermann@oligo.de">
+							</div>
+							<div class="form-group">
+								<label for="number">Telefonnummer:</label>
+								<input type="text" class="form-control" id="phone" placeholder="0221-12345678">
+							</div>
+							<div class="form-group">
+								<label for="message">Nachricht:</label>
+								<textarea class="form-control" rows="5" id="message" placeholder="Bitte geben Sie hier Ihre Nachricht ein."></textarea>
+							</div>
+						</form>
+					</div>
+			      <div class="modal-footer link-hover">
+			      	<div class="col-sm-6">
+			      		<a href="#0" data-dismiss="modal">x abbrechen</a>	
+			      	</div>
+			      	<div class="col-sm-6">
+			      		<a href="#0">senden ></a>	
+			      	</div>
+			      </div>
+			    </div>
+			  </div>
 			</div>
 
 		<!-- FOOTER -->
@@ -300,8 +411,14 @@
 		<script src="js/jquery-1.11.2.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
 		<script src="js/jquery.nicescroll.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/uisearch.js"></script>
+		<script src="js/bootstrap-datetimepicker.min.js"></script>
 		<script src="js/main.js"></script>
+		<script>
+			      $('.selectpicker').selectpicker({
+			      });
+		</script>
 </html>

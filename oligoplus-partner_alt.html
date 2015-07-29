@@ -15,7 +15,7 @@
 		<link href="css/style.css" rel="stylesheet" media="screen">
 	</head>
 
-	<body id="">
+	<body id="static">
 	<!-- Navigation -->
 	    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 	      <div class="container">
@@ -109,37 +109,29 @@
 	    </div>
 
 		<section class="hero">
-
+			<div class="search-form oplus">
+				<h3>OLIGO<sup> plus</sup> - Partner</h3>
+				<img src="img/logo-oligoplus.gif" alt="Logo OLIGOplus" class="oplus-logo">
+				<form role="form">
+					<div class="form-group link-hover">
+						<label for="plz">Bitte PLZ oder Ort eingeben</label>
+						<input type="text" class="form-control" id="plz">
+						<a type="submit" class="">Suche starten ></a>
+					</div>
+				</form>
+			</div>
 	        <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel">
-
 	             <div class="carousel-inner">
-			        <div class="item active">
-			            <div class="fill" style="background-image:url('img/head-systemleuchten-kelveen.jpg');"></div>
-			        </div>
-			        <div class="item">
-			            <div class="fill" style="background-image:url('img/head-systemleuchten-aviation.jpg');"></div>
-			        </div>
-			        <div class="item">
-			            <div class="fill" style="background-image:url('img/head-systemleuchten-hubble.jpg');"></div>
-			        </div>
-			        <div class="item">
-			            <div class="fill" style="background-image:url('img/head-systemleuchten-sentry.jpg');"></div>
-			        </div>
+					<div id="my_map"></div>
 			    </div>
-
-	          <!-- Schalter -->
-	          <a id="arrow-left" class="left carousel-control" href="#carousel-hero" role="button" data-slide="prev">
-	            <i class="fa fa-angle-left fa-2x"></i>
-	            <span class="sr-only">Zurück</span>
-	          </a>
-	          <a id="arrow-right" class="right carousel-control" href="#carousel-hero" role="button" data-slide="next">
-	            <i class="fa fa-angle-right fa-2x"></i>
-	            <span class="sr-only">Weiter</span>
-	          </a>
 	        </div>
+	          <a id="arrow-down" class="down" href="#top" role="button">
+	            <i class="fa fa-angle-down fa-2x"></i>
+	            <span class="sr-only">runter</span>
+	          </a>
 		</section>
 
-		<section class="content cd-main-content row">
+		<section id="top" class="content cd-main-content row">
 
 			<div class="main-content">
 				<div class="lead">
@@ -151,7 +143,7 @@
 				</div>
 				<div class="clearfix"></div>
 				<div class="section-wrapper">
-						<div class="section-data section-tab">
+						<div class="section-data section-partner section-tab">
 							<div class="row">
 								<ul id="tab-oplus" class="nav nav-tabs nav-justified" role="tablist">
 								<li>Postleitzahlgebiet:</li>
@@ -185,183 +177,240 @@
 									<li role="presentation" class="link-hover">
 										<a href="#tab-2" role="tab" id="profil-tab" data-toggle="tab" aria-controls="einzelleuchten"><span class="">9</span></a>
 									</li>
+									<li role="presentation" class="link-hover">
+										<a href="#tab-international" role="tab" id="profil-tab" data-toggle="tab" aria-controls="einzelleuchten"><span class="">International</span></a>
+									</li>
 								</ul>
 						    <div id="tab-content-oplus" class="tab-content">
 
 								<!-- PLZ 0 -->
 								<div role="tabpanel" class="tab-pane fade in active row" id="tab-0" aria-labelledBy="start-tab">
-									<div class="col-lg-6 col-xs-12 location-item">
+									<!-- ITEM -->	
+									<div class="col-md-6 col-lg-4 row location-item">
 										<div class="location-item-wrapper">
-											<div class="col-sm-7 col-xs-10 col-xs-offset-2 col-sm-offset-0 location-item-content">
+											<div class="col-sm-6 col-sm-push-6 location-item-img">
+												<img class="location-img img-responsive" src="img/store-dummy.jpg" alt="">
+											</div>
+											<div class="col-xs-12 col-sm-6 col-sm-pull-6 location-item-content">
 												<h3 class="">Licht Huber</h3>
-													<p>
-															Oberer Markt 6 <br>
-															92637 Weiden <br>
-															Tel.: 0961 / 471123456 <br>
-															Fax.: 0961 / 471123321 <br>
+													<ul>
+														<li>
+															Oberer Markt 6
+														</li>
+														<li>
+															92637 Weiden
+														</li>
+														<li>
+															Tel.: 0961 / 471123456
+														</li>
+														<li>
+															Fax.: 0961 / 471123321
+														</li>
+														<li>
 															Email: 
 															<a href="#0">
 																info@huber.de
-															</a> <br>
+															</a>
+														</li>
+														<li>
 															Web: 
 															<a href="#0" target="_blank">
 																www.huber.de
-															</a> <br>
-													</p>
+															</a>
+														</li>
+													</ul>
 											</div>
-											<div class="col-sm-5 col-xs-6 col-xs-offset-3 col-sm-offset-0 location-item-img">
-												<img class="location-img img-responsive" src="img/store-dummy.jpg" alt="">
-											</div>
-											<div class="col-xs-12 location-item-nav">
-												<div class="location-route col-xs-3"><a href="#0">Route planen</a></div>
+											<div class="col-xs-12 col-sm-12 location-item-nav">
+												<div class="location-distance col-xs-6 col-sm-2">15km</div>
+												<div class="location-route col-xs-6 col-sm-3"><a href="#0">Route planen</a></div>
+												<div class="col-xs-6 col-sm-3">OLIGOplus</div>
+												<div class="col-xs-6 col-sm-3">SiS</div>
 											</div>
 											<div class="clearfix"></div>
 										</div>
 									</div>
-									<div class="col-lg-6 col-xs-12 location-item">
+									<!-- END ITEM -->
+									<!-- ITEM -->	
+									<div class="col-md-6 col-lg-4 row location-item">
 										<div class="location-item-wrapper">
-											<div class="col-sm-7 col-xs-10 col-xs-offset-2 col-sm-offset-0 location-item-content">
-												<h3 class="">Licht Huber</h3>
-													<p>
-															Oberer Markt 6 <br>
-															92637 Weiden <br>
-															Tel.: 0961 / 471123456 <br>
-															Fax.: 0961 / 471123321 <br>
-															Email: 
-															<a href="#0">
-																info@huber.de
-															</a> <br>
-															Web: 
-															<a href="#0" target="_blank">
-																www.huber.de
-															</a> <br>
-													</p>
+											<div class="col-sm-6 col-sm-push-6 location-item-img">
+												<img class="location-img img-responsive" src="img/store-dummy-02.jpg" alt="">
 											</div>
-											<div class="col-sm-5 col-xs-6 col-xs-offset-3 col-sm-offset-0 location-item-img">
-												<img class="location-img img-responsive" src="img/store-dummy.jpg" alt="">
+											<div class="col-xs-12 col-sm-6 col-sm-pull-6 location-item-content">
+												<h3 class="">Leuchtenland</h3>
+												<ul>
+													<li>
+														Grafenau 1
+													</li>
+													<li>
+														92726 Waidhaus
+													</li>
+													<li>
+														Tel.: 09652 / 471123456
+													</li>
+													<li>
+														Fax.: 09652 / 471123321
+													</li>
+													<li>
+														Email: 
+														<a href="#0">
+															info@leuchtenland.de
+														</a>
+													</li>
+													<li>
+														Web: 
+														<a href="#0" target="_blank">
+															www.leuchtenland.de
+														</a>
+													</li>
+												</ul>
 											</div>
-											<div class="col-xs-12 location-item-nav">
-												<div class="location-route col-xs-3"><a href="#0">Route planen</a></div>
+											<div class="col-xs-12 col-sm-12 location-item-nav">
+												<div class="location-distance col-xs-6 col-sm-2">23km</div>
+												<div class="location-route col-xs-6 col-sm-3"><a href="#0">Route planen</a></div>
 											</div>
 											<div class="clearfix"></div>
 										</div>
 									</div>
-									<div class="col-lg-6 col-xs-12 location-item">
+									<!-- END ITEM -->
+									<!-- ITEM -->	
+									<div class="col-md-6 col-lg-4 row location-item">
 										<div class="location-item-wrapper">
-											<div class="col-sm-7 col-xs-10 col-xs-offset-2 col-sm-offset-0 location-item-content">
-												<h3 class="">Licht Huber</h3>
-													<p>
-															Oberer Markt 6 <br>
-															92637 Weiden <br>
-															Tel.: 0961 / 471123456 <br>
-															Fax.: 0961 / 471123321 <br>
-															Email: 
-															<a href="#0">
-																info@huber.de
-															</a> <br>
-															Web: 
-															<a href="#0" target="_blank">
-																www.huber.de
-															</a> <br>
-													</p>
+											<div class="col-sm-6 col-sm-push-6 location-item-img">
+												<img class="location-img img-responsive" src="img/store-dummy-03.jpg" alt="">
 											</div>
-											<div class="col-sm-5 col-xs-6 col-xs-offset-3 col-sm-offset-0 location-item-img">
-												<img class="location-img img-responsive" src="img/store-dummy.jpg" alt="">
+											<div class="col-xs-12 col-sm-6 col-sm-pull-6 location-item-content">
+												<h3 class="">Elektrofach Händler</h3>
+												<ul>
+													<li>
+														Händlerweg 43
+													</li>
+													<li>
+														12345 Händlingen
+													</li>
+													<li>
+														Tel.: 01234 / 56789
+													</li>
+													<li>
+														Fax.: 01234 / 56780
+													</li>
+													<li>
+														Email: 
+														<a href="#0">
+															kontakt@elektro-haendler.de
+														</a>
+													</li>
+													<li>
+														Web: 
+														<a href="#0" target="_blank">
+															www.elektro-haendler.de
+														</a>
+													</li>
+												</ul>
 											</div>
-											<div class="col-xs-12 location-item-nav">
-												<div class="location-route col-xs-3"><a href="#0">Route planen</a></div>
+											<div class="col-xs-12 col-sm-12 location-item-nav">
+												<div class="location-distance col-xs-6 col-sm-2">36km</div>
+												<div class="location-route col-xs-6 col-sm-3"><a href="#0">Route planen</a></div>
 											</div>
 											<div class="clearfix"></div>
 										</div>
 									</div>
-									<div class="col-lg-6 col-xs-12 location-item">
-										<div class="location-item-wrapper">
-											<div class="col-sm-7 col-xs-10 col-xs-offset-2 col-sm-offset-0 location-item-content">
-												<h3 class="">Licht Huber</h3>
-													<p>
-															Oberer Markt 6 <br>
-															92637 Weiden <br>
-															Tel.: 0961 / 471123456 <br>
-															Fax.: 0961 / 471123321 <br>
-															Email: 
-															<a href="#0">
-																info@huber.de
-															</a> <br>
-															Web: 
-															<a href="#0" target="_blank">
-																www.huber.de
-															</a> <br>
-													</p>
-											</div>
-											<div class="col-sm-5 col-xs-6 col-xs-offset-3 col-sm-offset-0 location-item-img">
-												<img class="location-img img-responsive" src="img/store-dummy.jpg" alt="">
-											</div>
-											<div class="col-xs-12 location-item-nav">
-												<div class="location-route col-xs-3"><a href="#0">Route planen</a></div>
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-xs-12 location-item">
-										<div class="location-item-wrapper">
-											<div class="col-sm-7 col-xs-10 col-xs-offset-2 col-sm-offset-0 location-item-content">
-												<h3 class="">Licht Huber</h3>
-													<p>
-															Oberer Markt 6 <br>
-															92637 Weiden <br>
-															Tel.: 0961 / 471123456 <br>
-															Fax.: 0961 / 471123321 <br>
-															Email: 
-															<a href="#0">
-																info@huber.de
-															</a> <br>
-															Web: 
-															<a href="#0" target="_blank">
-																www.huber.de
-															</a> <br>
-													</p>
-											</div>
-											<div class="col-sm-5 col-xs-6 col-xs-offset-3 col-sm-offset-0 location-item-img">
-												<img class="location-img img-responsive" src="img/store-dummy.jpg" alt="">
-											</div>
-											<div class="col-xs-12 location-item-nav">
-												<div class="location-route col-xs-3"><a href="#0">Route planen</a></div>
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</div>
+									<!-- END ITEM -->
 								</div>
 
 								<!-- PLZ 1 -->
-								<div role="tabpanel" class="tab-pane fade in row" id="tab-1" aria-labelledBy="start-tab">
-									<div class="col-lg-6 col-xs-12 location-item">
+								<div role="tabpanel" class="tab-pane fade in row" id="tab-1" aria-labelledBy="start-tab">		
+									<!-- ITEM -->	
+									<div class="col-md-6 col-lg-4 row location-item">
 										<div class="location-item-wrapper">
-											<div class="col-xs-12 location-item-nav">
-												<div class="location-route col-xs-3"><a href="#0">Route planen</a></div>
+											<div class="col-sm-6 col-sm-push-6 location-item-img">
+												<img class="location-img img-responsive" src="img/store-dummy.jpg" alt="">
 											</div>
-											<div class="col-sm-7 col-xs-10 col-xs-offset-2 col-sm-offset-0 location-item-content">
+											<div class="col-xs-12 col-sm-6 col-sm-pull-6 location-item-content">
 												<h3 class="">Licht Huber</h3>
-													<p>
-															Oberer Markt 6 <br>
-															92637 Weiden <br>
-															Tel.: 0961 / 471123456 <br>
-															Fax.: 0961 / 471123321 <br>
+													<ul>
+														<li>
+															Oberer Markt 6
+														</li>
+														<li>
+															92637 Weiden
+														</li>
+														<li>
+															Tel.: 0961 / 471123456
+														</li>
+														<li>
+															Fax.: 0961 / 471123321
+														</li>
+														<li>
 															Email: 
 															<a href="#0">
 																info@huber.de
-															</a> <br>
+															</a>
+														</li>
+														<li>
 															Web: 
 															<a href="#0" target="_blank">
 																www.huber.de
-															</a> <br>
-													</p>
+															</a>
+														</li>
+													</ul>
 											</div>
-											<div class="col-sm-5 col-xs-6 col-xs-offset-3 col-sm-offset-0 location-item-img">
-												<img class="location-img img-responsive" src="img/store-dummy.jpg" alt="">
+											<div class="col-xs-12 col-sm-12 location-item-nav">
+												<div class="location-distance col-xs-6 col-sm-2">15km</div>
+												<div class="location-route col-xs-6 col-sm-3"><a href="#0">Route planen</a></div>
 											</div>
 											<div class="clearfix"></div>
 										</div>
 									</div>
+									<!-- END ITEM -->
+									<!-- ITEM -->	
+									<div class="col-md-6 col-lg-4 row location-item">
+										<div class="location-item-wrapper">
+											<div class="col-sm-6 col-sm-push-6 location-item-img">
+												<img class="location-img img-responsive" src="img/store-dummy-02.jpg" alt="">
+											</div>
+											<div class="col-xs-12 col-sm-6 col-sm-pull-6 location-item-content">
+												<h3 class="">Leuchtenland</h3>
+												<ul>
+													<li>
+														Grafenau 1
+													</li>
+													<li>
+														92726 Waidhaus
+													</li>
+													<li>
+														Tel.: 09652 / 471123456
+													</li>
+													<li>
+														Fax.: 09652 / 471123321
+													</li>
+													<li>
+														Email: 
+														<a href="#0">
+															info@leuchtenland.de
+														</a>
+													</li>
+													<li>
+														Web: 
+														<a href="#0" target="_blank">
+															www.leuchtenland.de
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-xs-12 col-sm-12 location-item-nav">
+												<div class="location-distance col-xs-6 col-sm-2">23km</div>
+												<div class="location-route col-xs-6 col-sm-3"><a href="#0">Route planen</a></div>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<!-- END ITEM -->
+								</div>
+
+								<!-- PLZ 2 -->
+								<div role="tabpanel" class="tab-pane fade in row" id="tab-2" aria-labelledBy="start-tab">
+									<div class="no-result">Keine Ergebnisse :´(</div>	
 								</div>
 
 						    </div>
@@ -465,15 +514,117 @@
 		<script src="js/jquery-1.11.2.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
 		<script src="js/jquery.nicescroll.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/uisearch.js"></script>
-	<script src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=de"></script>
+		<script type="text/javascript" src="js/gmap3.js"></script>
 		<script src="js/main.js"></script>
 		<script>
 			$('#-tab-oplus a').click(function (e) {
 			  e.preventDefault()
 			  $(this).tab('show')
 			})
+		</script>
+		<script>
+		$("#my_map").width("100%").height("100%").gmap3({
+			getgeoloc:{
+			    callback : function(latLng){
+			      if (latLng){
+			        $(this).gmap3({
+			          marker:{ 
+			            latLng:latLng
+			          },
+			          map:{
+			            options:{
+			              zoom: 7
+			            }
+			          }
+			        });
+			      }
+			    }
+			},
+			marker:{
+				values:[
+				  {address:"Meysstraße 24, Hennef", data:"OLIGO Lichttechnik GmbH, Zentrale / Showroom ", options:{icon: "img/marker-oplus.png"}},
+				  {address:"Lange Felder 6, 19309 Lenzen", data:"OLIGO Lichttechnik GmbH, surface controls", options:{icon: "img/marker-oplus.png"}},
+				  {address:"Rudolf-Breitscheid-Straße 187, 14482 Potsdam", data:"OLIGO Lichttechnik GmbH, surface controls, Showroom OLIGO", options:{icon: "img/marker-oplus.png"}},
+				],
+				options:{
+				  draggable: false
+			},
+		    events:{
+				mouseover: function(marker, event, context){
+				var map = $(this).gmap3("get"),
+				  infowindow = $(this).gmap3({get:{name:"infowindow"}});
+				if (infowindow){
+				  infowindow.open(map, marker);
+				  infowindow.setContent(context.data);
+				} else {
+				  $(this).gmap3({
+				    infowindow:{
+				      anchor:marker, 
+				      options:{content: context.data}
+				    }
+				  });
+				}
+				},
+				mouseout: function(){
+					var infowindow = $(this).gmap3({get:{name:"infowindow"}});
+					if (infowindow){
+					  infowindow.close();
+					}
+					}
+				}
+			},
+			map:{
+				options:{
+					center:[51.07889, 12.260459999999966],
+					zoom:7,
+					mapTypeId: google.maps.MapTypeId.ROADMAP,
+					mapTypeControl: false,
+				    mapTypeControlOptions: {
+				        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+				        position: google.maps.ControlPosition.LEFT_BOTTOM
+				    },
+				    zoomControl: true,
+				    zoomControlOptions: {
+				        style: google.maps.ZoomControlStyle.LARGE,
+				        position: google.maps.ControlPosition.LEFT_BOTTOM
+				    },
+				    scaleControl: true,
+				    streetViewControl: true,
+				    streetViewControlOptions: {
+				        position: google.maps.ControlPosition.LEFT_BOTTOM
+				    },
+				    panControl: true,
+				    panControlOptions: {
+				        position: google.maps.ControlPosition.LEFT_BOTTOM
+				    },
+					styles:
+						[
+							{
+						        "featureType": "administrative",
+						        "elementType": "labels.text.fill",
+						        "stylers": [
+						            {
+						                "color": "#575756"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "landscape",
+						        "elementType": "geometry.fill",
+						        "stylers": [
+						            {
+						                "color": "#a29d86"
+						            }
+						        ]
+						    }
+						]
+				}
+			}
+		});
 		</script>
 </html>

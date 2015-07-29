@@ -3,19 +3,19 @@
 <!--[if IE 8]> <html class="ielt9 ie8 no-js" lang="de"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
 <head>
-		<meta charset="utf-8">
-		<title>Einzelleuchten | OLIGO Lichttechnik GmbH</title>
-		<meta name="description" content="Dekorative Einzelleuchten unterstreichen neben der Grundfunktion der Beleuchtung auch die Innenarchitektur des jeweiligen Raumes. ">
-		<meta name="author" content="OLIGO Lichttechnik GmbH">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<script src="js/modernizr.custom.js"></script>
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
-		<link href="css/style.css" rel="stylesheet" media="screen">
-	</head>
+	<meta charset="utf-8">
+	<title>Einzelleuchten | OLIGO Lichttechnik GmbH</title>
+	<meta name="description" content="Dekorative Einzelleuchten unterstreichen neben der Grundfunktion der Beleuchtung auch die Innenarchitektur des jeweiligen Raumes.">
+	<meta name="author" content="OLIGO Lichttechnik GmbH">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<script src="js/modernizr.custom.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+	<link href="css/style.css" rel="stylesheet" media="screen">
+</head>
 
-	<body id="lumination-overview">
+<body id="#lumination-overview">
 	<!-- Navigation -->
 	    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 	      <div class="container">
@@ -52,14 +52,14 @@
 	          	</li>
 	            <li class="dropdown">
 	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a>
-					<ul class="dropdown-menu">
-						<li><a href="innovationen.html">Innovationen</a></li>
-						<li><a href="lichtplanung.html">Lichtplanung</a></li>
-						<li><a href="systemtechnik.html">Systemtechnik</a></li>
-						<li><a href="sonderloesungen.html">Sonderlösungen</a></li>
-						<li><a href="vertrieb.html">Vertrieb</a></li>
-						<li><a href="lightorial.html">Lightorial</a></li>
-					</ul>
+	              <ul class="dropdown-menu">
+							<li><a href="innovationen.html">Innovationen</a></li>
+							<li><a href="lichtplanung.html">Lichtplanung</a></li>
+							<li><a href="systemtechnik.html">Systemtechnik</a></li>
+							<li><a href="sonderloesungen.html">Sonderlösungen</a></li>
+							<li><a href="vertrieb.html">Vertrieb</a></li>
+							<li><a href="lightorial.html">Lightorial</a></li>
+						</ul>
 	          	</li>
 	            <li class="dropdown">
 	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Unternehmen</a>
@@ -107,12 +107,13 @@
 	        </div>
 	      </div>
 	    </div>
+	    
+	<!-- Header -->
+	<section class="hero">
 
-		<section class="hero">
+        <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel">
 
-	        <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel">
-
-	             <div class="carousel-inner">
+             <div class="carousel-inner">
 			        <div class="item active">
 			            <div class="fill" style="background-image:url('img/head-einzelleuchten-lightbook.jpg');"></div>
 			        </div>
@@ -122,22 +123,26 @@
 			        <div class="item">
 			            <div class="fill" style="background-image:url('img/head-einzelleuchten-lisgo-sky.jpg');"></div>
 			        </div>
-			    </div>
+		    </div>
 
-	          <!-- Schalter -->
-	          <a id="arrow-left" class="left carousel-control" href="#carousel-hero" role="button" data-slide="prev">
-	            <i class="fa fa-angle-left fa-2x"></i>
-	            <span class="sr-only">Zurück</span>
+          <!-- Carousel-Nav -->
+          <a id="arrow-left" class="left carousel-control" href="#carousel-hero" role="button" data-slide="prev">
+            <i class="fa fa-angle-left fa-2x"></i>
+            <span class="sr-only">Zurück</span>
+          </a>
+          <a id="arrow-right" class="right carousel-control" href="#carousel-hero" role="button" data-slide="next">
+            <i class="fa fa-angle-right fa-2x"></i>
+            <span class="sr-only">Weiter</span>
+          </a>
+	          <a id="arrow-down" class="down" href="#top" role="button">
+	            <i class="fa fa-angle-down fa-2x"></i>
+	            <span class="sr-only">runter</span>
 	          </a>
-	          <a id="arrow-right" class="right carousel-control" href="#carousel-hero" role="button" data-slide="next">
-	            <i class="fa fa-angle-right fa-2x"></i>
-	            <span class="sr-only">Weiter</span>
-	          </a>
-	        </div>
-		</section>
+        </div>
 
+	</section>
 
-		<section class="content cd-main-content">
+		<section id="top" class="content cd-main-content">
 
 			<div class="main-content">
 				<div class="lead">
@@ -156,9 +161,9 @@
 						<h3 class="hidden-xs hidden-sm">Kategorie</h3>
 						<div class="col-xs-12 cd-tab-filter">
 							<ul class="cd-filters">
-								<li class="placeholder">
-									<a href="#0">Kategorie</a> <!-- selected option on mobile -->
-								</li> 
+								<li class="placeholder"> 
+									<a data-type="all" href="#0">Kategorie</a> <!-- selected option on mobile -->
+								</li>
 								<li class="filter link-hover clearfix" data-filter=".light-table"><a href="#0" data-type="table">Tischleuchten</a></li>
 								<li class="filter link-hover clearfix" data-filter=".light-pendant"><a href="#0" data-type="pendant">Pendelleuchten</a></li>
 								<li class="filter link-hover clearfix" data-filter=".light-wall"><a href="#0" data-type="wall">Wandleuchten</a></li>
@@ -168,54 +173,50 @@
 								<li class="filter link-hover clearfix" data-filter=".light-display"><a href="#0" data-type="display">Displayleuchten</a></li>
 							</ul> <!-- cd-filters -->
 						</div> <!-- cd-tab-filter -->
-
+						
 						<div class="col-xs-12 cd-subfilter">
 							<h3>Filter</h3>
 							<form>
 								<div class="col-md-12 cd-filter-block">
-									
-										<div class="cd-select cd-filters">
-											<select class="filter" name="selectThis" id="selectThis">
-												<option value=""><h3>Preis</h3></option>
-												<option value=".filter-price-0-250">0 - 250 €</option>
-												<option value=".filter-price-251-500">251 - 500 €</option>
-												<option value=".filter-price-501-1000">501 - 1000 €</option>
-												<option value=".filter-price-1001-1500">1001 - 1500 €</option>
-												<option value=".filter-price-1501-2500">1501 - 2500 €</option>
-												<option value=".filter-price-2501-4000">2501 - 4000 €</option>
-											</select>
-										</div> 
+									<div class="cd-select cd-filters">
+										<select class="filter" name="selectThis" id="selectThis">
+											<option value="">Preis</option>
+											<option value=".filter-price-0-250">0€ - 250€</option>
+											<option value=".filter-price-251-500">251€ - 500€</option>
+											<option value=".filter-price-501-1000">501€ - 1000€</option>
+											<option value=".filter-price-1001-1500">1001€ - 1500€</option>
+											<option value=".filter-price-1501-2500">1501€ - 2500€</option>
+											<option value=".filter-price-2501-4000">2501€ - 4000€</option>
+										</select>
+									</div> 
 								</div>
-								<div class="col-md-12 cd-filter-block">
-									
-										<div class="cd-select cd-filters">
-											<select class="filter" name="selectThis" id="selectThis">
-												<option value="">Farbe</option>
-												<option value=".filter-color-chrome">chrom</option>
-												<option value=".filter-color-silver">silber</option>
-												<option value=".filter-color-black">schwarz</option>
-												<option value=".filter-color-red">rot</option>
-												<option value=".filter-color-green">grün</option>
-												<option value=".filter-color-white">weiß</option>
-											</select>
-										</div>
+								<div class="cd-filter-block">
+									<div class="cd-select cd-filters">
+										<select class="filter" name="selectThis" id="selectThis">
+											<option value="">Farbe</option>
+											<option value=".filter-color-chrome">chrom</option>
+											<option value=".filter-color-silver">silber</option>
+											<option value=".filter-color-black">schwarz</option>
+											<option value=".filter-color-red">rot</option>
+											<option value=".filter-color-green">grün</option>
+											<option value=".filter-color-white">weiß</option>
+										</select>
+									</div> 
 								</div>
-								<div class="col-md-12 cd-filter-block">
-									
-										<div class="cd-select cd-filters">
-											<select class="filter" name="selectThis" id="selectThis">
-												<option value="">Leuchtmittel</option>
-												<option value=".filter-type-led">LED</option>
-												<option value=".filter-type-halogen">Halogen</option>
-											</select>
-										</div>
+								<div class="cd-filter-block">
+									<div class="cd-select cd-filters">
+										<select class="filter" name="selectThis" id="selectThis">
+											<option value="">Leuchtmittel</option>
+											<option value=".filter-type-led">LED</option>
+											<option value=".filter-type-halogen">Halogen</option>
+										</select>
+									</div>
 								</div>
 							</form>
 						</div>
 							<p><a href="#0"><i class="fa fa-trash"></i>Filter löschen</a></p>
 					</div>
-					
-					<div class="col-md-10 col-md-offset-2 cd-gallery row">
+					<div class="col-xs-12 col-md-10 col-md-offset-2 cd-gallery row">
 						<ul>
 							<li class="col-md-4 col-sm-6 col-xs-6 mix light-wall filter-type-led">
 								<a href="#" class="teaser view ">
@@ -421,8 +422,9 @@
 						</a>
 					</div>
 				</div>
+				</div>
 			</div>
-
+			<div class="clearfix"></div>
 		<!-- FOOTER -->
 		<footer>
 			<div class="row">
@@ -511,14 +513,15 @@
 		</footer>
 
 		</section>
-	</body>
 
-		<script src="js/jquery-1.11.2.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
-		<script src="js/jquery.nicescroll.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/uisearch.js"></script>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/uisearch.js"></script>
 	<script src="js/jquery.mixitup.min.js"></script>
-		<script src="js/main.js"></script>
+	<script src="js/main.js"></script>
+</body>
 </html>

@@ -111,14 +111,17 @@
 		<section class="hero">
 	        <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel">
 	             <div class="carousel-inner">
-			        <div class="item active">
-			            <div class="fill" style="background-image:url('img/head-concept-galleries-01.jpg');"></div>
-			        </div>
 			        <div class="item">
 			            <div class="fill" style="background-image:url('img/head-concept-galleries-02.jpg');"></div>
 			        </div>
 			        <div class="item">
 			            <div class="fill" style="background-image:url('img/head-concept-galleries-03.jpg');"></div>
+			        </div>
+			        <div class="item">
+			            <div class="fill" style="background-image:url('img/head-concept-galleries-01.jpg');"></div>
+			        </div>
+			        <div class="item active">
+			            <div class="fill" style="background-image:url('img/head-concept-galleries-04.jpg');"></div>
 			        </div>
 			    </div>
 
@@ -130,11 +133,15 @@
 	            <i class="fa fa-angle-right fa-2x"></i>
 	            <span class="sr-only">Weiter</span>
 	          </a>
+	          <a id="arrow-down" class="down" href="#top" role="button">
+	            <i class="fa fa-angle-down fa-2x"></i>
+	            <span class="sr-only">runter</span>
+	          </a>
 	        </div>
 		</section>
 
 
-		<section class="content">
+		<section id="top" class="content">
 			
 			<div class="main-content">
 				<div class="lead">
@@ -144,11 +151,10 @@
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
 					</p>
 				</div>
-				<div class="row section-teaser section-location">
-					<div class="col-md-12">
+				<div class="row section-wrapper">
+					<div class="row">
 						<div class="col-md-6">
-							<div class="col-md-12">
-								<div id="carousel-static" class="static-left carousel slide carousel-fade left" data-ride="carousel">
+							<div id="carousel-static" class="static-left carousel slide carousel-fade" data-ride="carousel">
 								  <div class="carousel-inner" role="listbox">
 								    <div class="item active">
 								      	<img class="img-responsive center-block" src="img/slider-concept-galleries-amsterdam-01.jpg" alt="">
@@ -166,8 +172,6 @@
 								    <span class="sr-only">Weiter</span>
 								  </a>
 								</div>
-							</div>
-							<div class="wrapper">
 								<h3>Amsterdam</h3>
 								<p>
 									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
@@ -175,11 +179,19 @@
 								<p>
 									Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat.
 								</p>
-							</div>
+								<h4>Lorem ipsum dolor sit</h4>
+								<p>
+									Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat.
+								</p>
+								<p>
+									Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat.
+								</p>
+								<p>
+									<a href="concept-gallery-impressionen-amsterdam.html"><h4>Impressionen ></h4></a>
+								</p>
 						</div>
 						<div class="col-md-6">
-							<div class="col-md-12">
-								<div id="carousel-static" class="static-right carousel slide carousel-fade right" data-ride="carousel">
+							<div id="carousel-static" class="static-right carousel slide carousel-fade" data-ride="carousel">
 								  <div class="carousel-inner" role="listbox">
 								    <div class="item active">
 								      	<img class="img-responsive center-block" src="img/slider-concept-galleries-duesseldorf-01.jpg" alt="">
@@ -197,8 +209,6 @@
 								    <span class="sr-only">Weiter</span>
 								  </a>
 								</div>
-							</div>
-							<div class="wrapper">
 								<h3>Düsseldorf</h3>
 								<p>
 									Architektur beginnt dort, wo sich Boden, Wand und Decke treffen. So viel steht fest: der Mensch braucht Räume. Sie spenden Schutz und Geborgenheit, sie trennen und verbinden und beflügeln die Fantasie: die des Bauherrn, des Innenarchitekten und des Lichtplaners. Aber: welcher Boden, welche Möbel, welches Licht passen in welchen Raum? Die Unternehmen Senso, THONETshop und OLIGO haben sich zusammengetan, um Antworten auf diese Fragen zu liefern.
@@ -206,9 +216,45 @@
 								<p>
 									Direkt am Anfang des Düsseldorfer Medienhafens, zwischen Stadttor und WDR, befindet sich die Concept Gallery - der neue gemeinsame Showroom für anspruchsvolles Interior Design. In den großzügig gestalteten Ausstellungsräumen lässt sich das Zusammenspiel von innovativer Lichttechnik, Möbeln und Bodenbelägen beurteilen.
 								</p>
+								<p>
+									Architektur beginnt dort, wo sich Boden, Wand und Decke treffen. So viel steht fest: der Mensch braucht Räume. Sie spenden Schutz und Geborgenheit, sie trennen und verbinden und beflügeln die Fantasie: die des Bauherrn, des Innenarchitekten und des Lichtplaners. Aber: welcher Boden, welche Möbel, welches Licht passen in welchen Raum? Die Unternehmen Senso, THONETshop und OLIGO haben sich zusammengetan, um Antworten auf diese Fragen zu liefern.
+								</p>
+								<p>
+									Direkt am Anfang des Düsseldorfer Medienhafens, zwischen Stadttor und WDR, befindet sich die Concept Gallery - der neue gemeinsame Showroom für anspruchsvolles Interior Design. In den großzügig gestalteten Ausstellungsräumen lässt sich das Zusammenspiel von innovativer Lichttechnik, Möbeln und Bodenbelägen beurteilen.
+								</p>
+								<p>
+									<a href="#0"><h4>Impressionen ></h4></a>
+								</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div id="contact_form" class="row">
+						<div class="intro">
+							<h2>Sie wollen die Concept Gallery besuchen?</h2>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+							 <div class="col-md-12">
+							 	<div class="col-sm-6">
+							 		<h3>Amsterdam</h3>
+									<p>
+										Pedro de Medinalaan 53 <br>
+										1086 XP AMSTERDAM <br>
+										Telefon: +31 (0) 20-49 630 46 <br>
+										Email: <a href="#0">concept-gallery-amsterdam@oligo.de</a>
+									</p>
+							 	</div>
+							 	<div class="col-sm-6">
+							 		<h3>Düsseldorf</h3>
+									<p>
+										Ernst-Gnoß-Straße 5 <br>
+										40219 Düsseldorf <br>
+										Telefon: +49 (0) 211 157 607 20 <br>
+										Email: <a href="#0">concept-gallery-duesseldorf@oligo.de</a>
+									</p>
+							 	</div>
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 
@@ -305,6 +351,7 @@
 		<script src="js/jquery-1.11.2.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
 		<script src="js/jquery.nicescroll.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/uisearch.js"></script>

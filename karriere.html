@@ -10,8 +10,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<script src="js/modernizr.custom.js"></script>
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap-datetimepicker.min.css"rel="stylesheet" type="text/css">
 		<link href="css/style.css" rel="stylesheet" media="screen">
 	</head>
 
@@ -52,21 +53,20 @@
 	          	</li>
 	            <li class="dropdown">
 	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a>
-					<ul class="dropdown-menu">
-						<li><a href="innovationen.html">Innovationen</a></li>
-						<li><a href="lichtplanung.html">Lichtplanung</a></li>
-						<li><a href="systemtechnik.html">Systemtechnik</a></li>
-						<li><a href="sonderloesungen.html">Sonderlösungen</a></li>
-						<li><a href="vertrieb.html">Vertrieb</a></li>
-						<li><a href="lightorial.html">Lightorial</a></li>
-					</ul>
+	              <ul class="dropdown-menu">
+	                <li><a href="innovationen.html">Innovationen</a></li>
+	                <li><a href="lichtplanung.html">Lichtplanung</a></li>
+	                <li><a href="systemtechnik.html">Systemtechnik</a></li>
+	                <li><a href="sonderloesungen.html">Sonderlösungen</a></li>
+	                <li><a href="vertrieb.html">Vertrieb</a></li>
+	                <li><a href="lightorial.html">Lightorial</a></li>
+	              </ul>
 	          	</li>
 	            <li class="dropdown">
 	              <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Unternehmen</a>
 	              <ul class="dropdown-menu">
 	                <li><a href="selbstverstaendnis.html">Selbstverständnis</a></li>
 	                <li><a href="geschaeftsbereiche.html">Geschäftsbereiche</a></li>
-	                <li><a href="standorte.html">Standorte</a></li>
 	                <li><a class="active" href="karriere.html">Karriere</a></li>
 	                <li><a href="news.html">News</a></li>
 	              </ul>
@@ -115,11 +115,15 @@
 			            <div class="fill" style="background-image:url('img/head-karriere.jpg');"></div>
 			        </div>
 			    </div>
+	          <a id="arrow-down" class="down" href="#top" role="button">
+	            <i class="fa fa-angle-down fa-2x"></i>
+	            <span class="sr-only">runter</span>
+	          </a>
 	        </div>
 		</section>
 
 
-		<section class="content">
+		<section id="top" class="content">
 			
 			<div class="main-content">
 				<div class="lead">
@@ -127,110 +131,127 @@
 					<h2 class="">Karriere</h2>
 					<p>
 						<span>OLIGO als Arbeitgeber</span>. OLIGO entwickelt, fertigt und vermarktet weltweit hochwertige Leuchten und Lichtsysteme. Die innovative Verknüpfung von Design und Funktionalität sowie eine präzise Verarbeitung mit höchstem Qualitätsanspruch kennzeichnen die Produkte und dokumentieren unsere Unternehmenskultur. Licht ist unsere Leidenschaft. Wenn Sie Teil dieser Kultur sein möchten, freuen wir uns auf Ihre aussagekräftige Bewerbung.
-
 					</p>
 				</div>
 				<div class="row section-wrapper">
 					<div class="row">
-						<div class="col-md-4">
-						  <div class="media-body">
-						  	<div class="col-md-12">
-						  		<a href="#">
-							      <img class="img-responsive" src="img/teaser-karriere.jpg" alt="...">
-							    </a>
-						  	</div>
-						  	<div class="col-md-12 date">
-						  		<p>ab sofort</p>
-						  	</div>
-						  	<div class="col-md-12 link-hover">
-						  		<h3 class="media-heading">Vertriebsspezialisten im Leuchtenfachhandel (m/w) Süddeutschland</h4>
-							    <p class="item-text">
-							    	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-							    </p>
-							    <a class="" href="#">mehr erfahren <span>></span></a>
-						  	</div>
-						  </div>
+						<div class="col-sm-4 link-hover">
+							<img class="img-responsive" src="img/teaser-karriere.jpg" alt="">
+					  		<p class="col-md-12 teaser-date">ab sofort</p>
+							<h3>Vertriebsspezialisten im Leuchtenfachhandel (m/w) Süddeutschland</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+							</p>
+						    <a href="#" data-toggle="modal" data-target="#modalLightorial">Jetzt anmelden <span>></span></a>
 						</div>
-						<div class="col-md-4">
-						  <div class="media-body">
-						  	<div class="col-md-12">
-						  		<a href="#">
-							      <img class="img-responsive" src="img/teaser-karriere.jpg" alt="...">
-							    </a>
-						  	</div>
-						  	<div class="col-md-12 date">
-						  		<p>ab sofort</p>
-						  	</div>
-						  	<div class="col-md-12 link-hover">
-						  		<h3 class="media-heading">Vertriebsspezialisten im Leuchtenfachhandel (m/w) PLZ 5</h4>
-							    <p class="item-text">
-							    	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-							    </p>
-							    <a href="#">mehr erfahren <span>></span></a>
-						  	</div>
-						  </div>
+						<div class="col-sm-4 link-hover">
+							<img class="img-responsive" src="img/teaser-karriere.jpg" alt="">
+					  		<p class="col-md-12 teaser-date">ab ab sofort / befristet auf 1 Jahr</p>
+							<h3>Fertigungsmitarbeiter (m/w) in Teilzeit</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+							</p>
+						    <a href="#" data-toggle="modal" data-target="#modalLightorial">Jetzt anmelden <span>></span></a>
 						</div>
-						<div class="col-md-4">
-						  <div class="media-body">
-						  	<div class="col-md-12">
-						  		<a href="#">
-							      <img class="img-responsive" src="img/teaser-karriere.jpg" alt="...">
-							    </a>
-						  	</div>
-						  	<div class="col-md-12 date">
-						  		<p>ab sofort / befristet auf 1 Jahr</p>
-						  	</div>
-						  	<div class="col-md-12 link-hover">
-						  		<h3 class="media-heading">Fertigungsmitarbeiter (m/w) in Teilzeit</h4>
-							    <p class="item-text">
-							    	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-							    </p>
-							    <a href="#">mehr erfahren <span>></span></a>
-						  	</div>
-						  </div>
+						<div class="col-sm-4 link-hover">
+							<img class="img-responsive" src="img/teaser-karriere.jpg" alt="">
+					  		<p class="col-md-12 teaser-date">ab sofort</p>
+							<h3>Vertriebsspezialisten im Leuchtenfachhandel (m/w) PLZ 5</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+							</p>
+						    <a href="#" data-toggle="modal" data-target="#modalLightorial">Jetzt anmelden <span>></span></a>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4">
-						  <div class="media-body">
-						  	<div class="col-md-12">
-						  		<a href="#">
-							      <img class="img-responsive" src="img/teaser-karriere.jpg" alt="...">
-							    </a>
-						  	</div>
-						  	<div class="col-md-12 date">
-						  		<p>zum 01. August 2015</p>
-						  	</div>
-						  	<div class="col-md-12 link-hover">
-						  		<h3 class="media-heading">Ausbildung zur Fachkraft für Lagerlogistik (m/w)</h4>
-							    <p class="item-text">
-							    	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-							    </p>
-							    <a href="#">mehr erfahren <span>></span></a>
-						  	</div>
-						  </div>
+						<div class="col-sm-4 link-hover">
+							<img class="img-responsive" src="img/teaser-karriere.jpg" alt="">
+					  		<p class="col-md-12 teaser-date">zum 01. August 2015</p>
+							<h3>Ausbildung zur Fachkraft für Lagerlogistik (m/w)</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+							</p>
+						    <a href="#" data-toggle="modal" data-target="#modalLightorial">Jetzt anmelden <span>></span></a>
 						</div>
-						<div class="col-md-4">
-						  <div class="media-body">
-						  	<div class="col-md-12">
-						  		<a href="#">
-							      <img class="img-responsive" src="img/teaser-karriere-initiativ.jpg" alt="...">
-							    </a>
-						  	</div>
-						  	<div class="col-md-12 date">
-						  		<p>zum 01. August 2015</p>
-						  	</div>
-						  	<div class="col-md-12 link-hover">
-						  		<h3 class="media-heading">Initiativbewerbungen</h4>
-							    <p class="item-text">
-							    	OLIGO ist für Sie ein Wunsch-Arbeitgeber und Sie möchten sich initiativ bewerben? Auch, wenn wir aktuell keinen freien Arbeitsplatz in unserem Unternehmen zu besetzen haben, der Ihrer Ausbildung oder Ihren Wünschen entspricht, nehmen wir Ihre Initiativbewerbung gerne entgegen.
-							    </p>
-							    <a href="#">mehr erfahren <span>></span></a>
-						  	</div>
-						  </div>
+						<div class="col-sm-4 link-hover">
+							<img class="img-responsive" src="img/teaser-karriere.jpg" alt="">
+					  		<p class="col-md-12 teaser-date">ab ab sofort / befristet auf 1 Jahr</p>
+							<h3>Fertigungsmitarbeiter (m/w) in Teilzeit</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+							</p>
+						    <a href="#" data-toggle="modal" data-target="#modalLightorial">Jetzt anmelden <span>></span></a>
+						</div>
+						<div class="col-sm-4 link-hover">
+							<img class="img-responsive" src="img/teaser-karriere-initiativ.jpg" alt="">
+					  		<p class="col-md-12 teaser-date"></p>
+							<h3>Initiativbewerbungen</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+							</p>
+						    <a href="#" data-toggle="modal" data-target="#modalLightorial">Jetzt anmelden <span>></span></a>
 						</div>
 					</div>
+					<div class="clearfix"></div>
 				</div>
+			</div>
+
+
+			<!-- Modal -->
+			<div class="modal fade" id="modalLightorial" tabindex="-1" role="dialog" aria-labelledby="modalLightorial">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="modalLightorial">Bewerben</h4>
+			      </div>
+					<div class="modal-body">
+						<form role="form">
+							<div class="form-group">
+								<label for="thema">Stellenausschreibung:</label>
+							    <select class="">
+									  <option>Vertriebsspezialisten im Leuchtenfachhandel (m/w) Süddeutschland</option>
+									  <option>Vertriebsspezialisten im Leuchtenfachhandel (m/w) PLZ 5</option>
+									  <option>Fertigungsmitarbeiter (m/w) in Teilzeit</option>
+									  <option>Initiativbewerbung</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="user">Vorname, Name:</label>
+								<input type="text" class="form-control" id="user" placeholder="Max Mustermann">
+							</div>
+							<div class="form-group">
+								<label for="email">Email-Adresse:</label>
+								<input type="email" class="form-control" id="email" placeholder="max.mustermann@oligo.de">
+							</div>
+							<div class="form-group">
+								<label for="number">Telefonnummer:</label>
+								<input type="text" class="form-control" id="phone" placeholder="0221-12345678">
+							</div>
+							<div class="form-group">
+								<label for="message">Nachricht:</label>
+								<textarea class="form-control" rows="5" id="message" placeholder="Bitte geben Sie hier Ihre Nachricht ein."></textarea>
+							</div>
+							<div class="form-group">
+								<a class='' href='javascript:;'>
+								<i class="fa fa-upload"></i> &nbsp;Upload von Bewerbungsunterlagen (bis 10MB)
+									<input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+								</a>
+								&nbsp;
+								<span class='label label-primary col-sm-2' id="upload-file-info"></span>
+							</div>
+						</form>
+					</div>
+			      <div class="modal-footer link-hover">
+			      	<div class="col-sm-6">
+			      		<a href="#0" data-dismiss="modal">x abbrechen</a>	
+			      	</div>
+			      	<div class="col-sm-6">
+			      		<a href="#0">senden ></a>	
+			      	</div>
+			      </div>
+			    </div>
+			  </div>
 			</div>
 
 		<!-- FOOTER -->
@@ -272,7 +293,6 @@
 						<ul>
 							<li><a href="selbstverstaendnis.html">Selbstverständnis</a></li>
 							<li><a href="geschaeftsbereiche.hmtl">Geschäftsbereiche</a></li>
-							<li><a href="standorte.html">Standorte</a></li>
 							<li><a href="karriere.html">Karriere</a></li>
 							<li><a href="news.html">News</a></li>
 						</ul>
@@ -326,8 +346,10 @@
 		<script src="js/jquery-1.11.2.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
 		<script src="js/jquery.nicescroll.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/uisearch.js"></script>
+		<script src="js/bootstrap-datetimepicker.min.js"></script>
 		<script src="js/main.js"></script>
 </html>
